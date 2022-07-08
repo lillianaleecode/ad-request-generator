@@ -18,34 +18,36 @@
         <div class="ad-details">
           <div class="input-box">
             <span class="details">Parameter</span>
-            <input type="text" placeholder="Enter your name" required>
+            <input type="text" placeholder="Write Something" required>
           </div>
           <div class="input-box">
             <span class="details">Description</span>
-            <input type="text" placeholder="Enter your username" required>
+            <input type="text" placeholder="Write Something" required>
           </div>
           <div class="input-box">
             <span class="details">Requirement</span>
-            <input type="text" placeholder="Enter your email" required>
+            <input type="text" placeholder="Write Something" required>
           </div>
           
           
         </div>
 
-        <!-- GDPR -->
+        <!-- PARAMETER GDPR -->
         <div class="gdpr-details">
             <input type="radio" name="gdpr" id="gdpr-0">
             <input type="radio" name="gdpr" id="gdpr-1">
-
-            <span class="gdpr-title">GDPR</span>
             
-            <!-- toggle button -->
+            <!-- tittle -->
+            <span class="gdpr-title">GDPR</span>
+        
+            <!-- toggle -->
             <label class="toggle">
-              <input type="checkbox" />
+              <input type="checkbox" onclick="showHide1()" />
               <span class="slider round"></span>
             </label>   
-     
-            <div class="category">
+
+            <!-- parameter options -->
+            <div class="category toggle-1 hide ">
 
                 <label for="gdpr-0">
                     <span class="dot gdpr-0"></span>
@@ -63,7 +65,7 @@
          
         </div>
 
-        <!-- vplaybackmethod -->
+        <!-- PARAMETER vplaybackmethod -->
         <div class="">
             <input type="radio" name="vplaybackmethod" id="vplaybackmethod-1">
             <input type="radio" name="vplaybackmethod" id="vplaybackmethod-2">
@@ -71,9 +73,17 @@
             <input type="radio" name="vplaybackmethod" id="vplaybackmethod-4">
             <input type="radio" name="vplaybackmethod" id="vplaybackmethod-5">
 
+            <!-- tittle -->
             <span class="">vplaybackmethod</span>
-            
-            <div class="category">
+
+             <!-- toggle-->
+             <label class="toggle">
+              <input type="checkbox" onclick="showHide2()" />
+              <span class="slider round"></span>
+            </label>   
+
+            <!-- parameter options -->
+            <div class="category toggle-2 hide">
 
                 <label for="vplaybackmethod-1">
                     <span class="dot vplaybackmethod-1"></span>
@@ -108,16 +118,26 @@
             </div>
          
         </div>
-            <!-- vcontext -->
+
+        <!-- PARAMETER vcontext -->
         <div class="">
             <input type="radio" name="vcontext" id="vcontext-1">
             <input type="radio" name="vcontext" id="vcontext-2">
             <input type="radio" name="vcontext" id="vcontext-3">
             <input type="radio" name="vcontext" id="vcontext-4">
 
+            <!-- tittle -->
             <span class="">vcontext</span>
+
+            <!-- toggle-->
+            <label class="toggle">
+              <input type="checkbox" onclick="showHide3()" />
+              <span class="slider round"></span>
+            </label>   
             
-            <div class="category">
+            <!-- parameter options -->
+
+            <div class="category toggle-3 hide">
 
                 <label for="vcontext-1">
                     <span class="dot vcontext-1"></span>
