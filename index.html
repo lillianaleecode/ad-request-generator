@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <title>
+        Ad Request Generator
+      </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Ad Request's Generator - AdTech </div>
+    <div class="content">
+      <form action="#">
+          
+        <div class="ad-details">
+          <div class="input-box">
+            <span class="details">Parameter</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Description</span>
+            <input type="text" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Requirement</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          
+          
+        </div>
+
+        <!-- GDPR -->
+        <div class="gdpr-details">
+            <input type="radio" name="gdpr" id="gdpr-0">
+            <input type="radio" name="gdpr" id="gdpr-1">
+
+            <span class="gdpr-title">GDPR</span>
+            <button onClick="Fun()">
+                Yes
+              </button>
+            
+            <div class="category">
+
+                <label for="gdpr-0">
+                    <span class="dot gdpr-0"></span>
+                    <span class="gdpr">0</span>
+                    <span class="description">0 = no = GDPR does not apply</span>
+                </label>
+
+                <label for="gdpr-1">
+                    <span class="dot gdpr-1"></span>
+                    <span class="gdpr">1</span>
+                    <span class="description">1 = yes = GDPR applies</span>
+                </label>
+            
+            </div>
+         
+        </div>
+
+        <!-- vplaybackmethod -->
+        <div class="">
+            <input type="radio" name="vplaybackmethod" id="vplaybackmethod-1">
+            <input type="radio" name="vplaybackmethod" id="vplaybackmethod-2">
+            <input type="radio" name="vplaybackmethod" id="vplaybackmethod-3">
+            <input type="radio" name="vplaybackmethod" id="vplaybackmethod-4">
+            <input type="radio" name="vplaybackmethod" id="vplaybackmethod-5">
+
+            <span class="">vplaybackmethod</span>
+            
+            <div class="category">
+
+                <label for="vplaybackmethod-1">
+                    <span class="dot vplaybackmethod-1"></span>
+                    <span class="vplaybackmethod">1</span>
+                    <span class="description">1 - Auto-play, sound-on</span>
+                </label>
+
+                <label for="vplaybackmethod-2">
+                    <span class="dot vplaybackmethod-2"></span>
+                    <span class="vplaybackmethod">2</span>
+                    <span class="description">2 - Auto-play, sound-off</span>
+                </label>
+
+                <label for="vplaybackmethod-3">
+                    <span class="dot vplaybackmethod-3"></span>
+                    <span class="vplaybackmethod">3</span>
+                    <span class="description">3 - Click-to-play</span>
+                </label>
+
+                <label for="vplaybackmethod-4">
+                    <span class="dot vplaybackmethod-4"></span>
+                    <span class="vplaybackmethod">4</span>
+                    <span class="description">4 - Mouse-over</span>
+                </label>
+
+                <label for="vplaybackmethod-5">
+                    <span class="dot vplaybackmethod-5"></span>
+                    <span class="vplaybackmethod">5</span>
+                    <span class="description">5 - Auto-play, sound unknown</span>
+                </label>
+            
+            </div>
+         
+        </div>
+            <!-- vcontext -->
+        <div class="">
+            <input type="radio" name="vcontext" id="vcontext-1">
+            <input type="radio" name="vcontext" id="vcontext-2">
+            <input type="radio" name="vcontext" id="vcontext-3">
+            <input type="radio" name="vcontext" id="vcontext-4">
+
+            <span class="">vcontext</span>
+            
+            <div class="category">
+
+                <label for="vcontext-1">
+                    <span class="dot vcontext-1"></span>
+                    <span class="vcontext">1</span>
+                    <span class="description">1 - Linear Pre-roll</span>
+                </label>
+
+                <label for="vcontext-2">
+                    <span class="dot vcontext-2"></span>
+                    <span class="vcontext">2</span>
+                    <span class="description">2 - Linear Mid-roll</span>
+                </label>
+
+                <label for="vcontext-3">
+                    <span class="dot vcontext-3"></span>
+                    <span class="vcontext">3</span>
+                    <span class="description">3 - Linear Post-roll</span>
+                </label>
+
+                <label for="vcontext-4">
+                    <span class="dot vcontext-4"></span>
+                    <span class="vcontext">4</span>
+                    <span class="description">4 - Outstream</span>
+                </label>
+
+            </div>
+        
+        </div>
+
+       
+
+        <div class="button">
+          <input type="submit" value="SUBMIT">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
