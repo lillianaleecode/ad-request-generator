@@ -3,7 +3,17 @@ const toggle = document.querySelector('.toggle input')
 toggle.addEventListener('click', () => {
     const onOff = toggle.parentNode.querySelector('.onoff')
     onOff.textContent = toggle.checked ? 'ON' : 'OFF'
+    
 })
+
+//to disable radio buttons:
+// if (onOff.textContent = 'OFF'){
+//     var radio = onOff;
+//     radio.checked = false;
+
+// }
+
+
 
 //
 
