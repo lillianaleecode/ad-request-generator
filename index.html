@@ -322,11 +322,140 @@
             </div>
           </div>
       </div>
-      
+
       <!-- WEB ONLY PARAMETERS: -->
       <div class="container">
         <div class="title"> WEB ONLY PARAMETERS: </div>
 
+        <!-- PARAMETER referrer -->
+        <div class="referrer-details">
+                          
+          <!-- tittle -->
+          <span class="referrer-title">referrer</span>
+
+          <!-- toggle -->
+          <label class="toggle">
+            <!-- <span class="onoff">OFF</span> -->
+            <input type="checkbox" onclick="showHideReferrer()" />
+            <span class="slider round"></span>
+          </label>   
+
+          <!-- parameter options -->
+          <div class="category toggle-referrer hide ">      
+            <input type="text" placeholder="referrer=[URL, value encoded]"> 
+          </div>
+      
+        </div>
+
+      </div>
+
+      <!-- APPS/CTV ONLY PARAMETERS: -->
+      <div class="container">
+        <div class="title"> APPS/CTV ONLY PARAMETERS: </div>
+
+        <!-- PARAMETER appid -->
+        <div class="appid-details">
+                          
+          <!-- tittle -->
+          <span class="appid-title">appid</span>
+
+          <!-- toggle -->
+          <label class="toggle">
+            <!-- <span class="onoff">OFF</span> -->
+            <input type="checkbox" onclick="showHideAppid()" />
+            <span class="slider round"></span>
+          </label>   
+
+          <!-- parameter options -->
+          <div class="category toggle-appid hide ">      
+            <input type="text" placeholder="appid=[bundle ID of the mobile application]"> 
+          </div>
+      
+        </div>
+
+        <!-- PARAMETER ifa -->
+        <div class="ifa-details">
+                          
+          <!-- tittle -->
+          <span class="ifa-title">ifa</span>
+
+          <!-- toggle -->
+          <label class="toggle">
+            <!-- <span class="onoff">OFF</span> -->
+            <input type="checkbox" onclick="showHideIfa()" />
+            <span class="slider round"></span>
+          </label>   
+
+          <!-- parameter options -->
+          <div class="category toggle-ifa hide ">      
+            <input type="text" placeholder="appid=[unique device identifier using UUID standard (8-4-4-4-12)]"> 
+          </div>
+      
+        </div>
+
+        <!-- PARAMETER ifa_type -->
+        <div class="ifa_type-details">
+          <input type="radio" name="ifa_type" id="ifa_type-0">
+          <input type="radio" name="ifa_type" id="ifa_type-1">
+          <input type="radio" name="ifa_type" id="ifa_type-2">
+          <input type="radio" name="ifa_type" id="ifa_type-3">
+          <input type="radio" name="ifa_type" id="ifa_type-4">
+          <input type="radio" name="ifa_type" id="ifa_type-5">
+          
+          <!-- tittle -->
+          <span class="ifa_type-title">ifa-type</span>
+      
+          <!-- toggle -->
+          <label class="toggle">
+            <input type="checkbox" onclick="showHideIfaType()" />
+            <span class="slider round"></span>
+          </label>   
+
+          <!-- parameter options -->
+          <div class="category toggle-ifa_type hide ">
+
+            <label for="ifa_type-0">
+              <span class="dot ifa_type-0"></span>
+              <span class="ifa_type">aaid</span>
+              <span class="description">(Android)</span>
+            </label>
+
+            <label for="ifa_type-1">
+              <span class="dot ifa_type-1"></span>
+              <span class="ifa_type">idfa</span>
+              <span class="description">(AppleTV)</span>
+            </label>
+
+            <label for="ifa_type-2">
+              <span class="dot ifa_type-2"></span>
+              <span class="ifa_type">afai</span>
+              <span class="description">(Amazon Fire)</span>
+            </label>
+
+            <label for="ifa_type-3">
+              <span class="dot ifa_type-3"></span>
+              <span class="ifa_type">msai</span>
+              <span class="description">(Microsoft)</span>
+            </label>
+
+            <label for="ifa_type-4">
+              <span class="dot ifa_type-4"></span>
+              <span class="ifa_type">rida</span>
+              <span class="description">(Roku)</span>
+            </label>
+
+            <label for="ifa_type-5">
+              <span class="dot ifa_type-5"></span>
+              <span class="ifa_type">ppid</span>
+            </label>
+          
+          </div>
+      
+        </div>
+
+        
+
+        <!-- SUBMIT BUTTON -->
         <div class="button">
           <input type="submit" value="SUBMIT" onclick="generatedata()">
         </div>

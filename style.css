@@ -115,6 +115,14 @@ form .input-box span.details{
  #vplaybackmethod-4:checked ~ .category label .vplaybackmethod-4,
  #vplaybackmethod-5:checked ~ .category label .vplaybackmethod-5,
 
+ #ifa_type-0:checked ~ .category label .ifa_type-0,
+ #ifa_type-1:checked ~ .category label .ifa_type-1,
+ #ifa_type-2:checked ~ .category label .ifa_type-2,
+ #ifa_type-3:checked ~ .category label .ifa_type-3,
+ #ifa_type-4:checked ~ .category label .ifa_type-4,
+ #ifa_type-5:checked ~ .category label .ifa_type-5,
+ 
+
  #vcontext-1:checked ~ .category label .vcontext-1,
  #vcontext-2:checked ~ .category label .vcontext-2,
  #vcontext-3:checked ~ .category label .vcontext-3,

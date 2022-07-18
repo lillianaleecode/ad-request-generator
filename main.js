@@ -110,6 +110,50 @@ function showHideGdprConsent(){
 
 //
 
+
+let toggleReferrer = document.querySelector(".toggle-referrer");
+let isReferrer = true;
+
+function showHideReferrer(){
+    isReferrer = !isReferrer;
+    toggleReferrer.classList.toggle("hide", isReferrer);
+}
+//
+
+let toggleAppid = document.querySelector(".toggle-appid");
+let isAppid = true;
+
+function showHideAppid(){
+    isAppid = !isAppid;
+    toggleAppid.classList.toggle("hide", isAppid);
+}
+
+//
+
+let toggleIfa = document.querySelector(".toggle-ifa");
+let isIfa = true;
+
+function showHideIfa(){
+    isIfa = !isIfa;
+    toggleIfa.classList.toggle("hide", isIfa);
+}
+
+//
+
+//
+
+let toggleIfaType = document.querySelector(".toggle-ifa_type");
+let isIfaType = true;
+
+function showHideIfaType(){
+    isIfaType = !isIfaType;
+    toggleIfaType.classList.toggle("hide", isIfaType);
+}
+
+//
+
+//
+
 let toggleShow3 = document.querySelector(".toggle-3");
 let isShow3 = true;
 
