@@ -16,20 +16,7 @@
       <form action="#" class="generatorForm">
           
         <div class="ad-details">
-          <div class="input-box">
-            <span class="details">Parameter</span>
-            <input type="text" placeholder="Write Something" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Description</span>
-            <input type="text" placeholder="Write Something" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Requirement</span>
-            <input type="text" placeholder="Write Something" required>
-          </div>
-          
-          
+
         </div>
 
         <!-- PARAMETER /PTV /SSPTV -->
@@ -68,7 +55,10 @@
 
       <!-- PARAMETER MEMBER -->
       <div class="member-details">
-        
+      <input type="radio" name="member" id="member-0">
+      <input type="radio" name="member" id="member-1">
+      <input type="radio" name="member" id="member-2">
+      
         
         <!-- tittle -->
         <span class="member-title">MEMBER</span>
@@ -81,11 +71,29 @@
         </label>   
 
         <!-- parameter options -->
-        <div class="category toggle-member hide ">      
-            <input type="text" placeholder="Member"> 
-        </div>
+      <div class="category toggle-member hide ">
+
+        <label for="member-0">
+            <span class="dot member-0"></span>
+            <span class="member">7823</span>
+        </label>
+
+        <label for="member-1">
+            <span class="dot member-1"></span>
+            <span class="member">12548</span>     
+        </label>
+        <label for="member-2">
+          <span class="dot member-2"></span>
+          <span class="member">7791</span>
+      </label>
+    
+    </div>
+
+       
      
     </div>
+
+     
 
     <!-- PARAMETER id Or inv_code -->
     <div class="id-details">
@@ -103,7 +111,7 @@
 
       <!-- parameter options -->
       <div class="category toggle-Id hide ">      
-          <input type="text" placeholder="Id=[Xandr placement id]"> 
+          <input type="text" placeholder="Id=[placement id]"> 
       </div>
    
   </div>
@@ -125,7 +133,7 @@
 
       <!-- parameter options -->
       <div class="category toggle-InvCode hide ">      
-          <input type="text" placeholder="Id=[Xandr placement name]"> 
+          <input type="text" placeholder="Id=[Xandr name]"> 
       </div>
    
   </div>
@@ -184,6 +192,48 @@
             
             </div>
          
+        </div>
+
+          <!-- PARAMETER vwidth -->
+          <div class="vwidth-details">
+              
+              
+            <!-- tittle -->
+            <span class="vwidth-title">vwidth</span>
+        
+            <!-- toggle -->
+            <label class="toggle">
+              <!-- <span class="onoff">OFF</span> -->
+              <input type="checkbox" onclick="showHideVwidth()" />
+              <span class="slider round"></span>
+            </label>   
+
+            <!-- parameter options -->
+            <div class="category toggle-vwidth hide ">      
+                <input type="text" placeholder="vwidth=[player width in pixel]"> 
+            </div>
+        
+        </div>
+
+          <!-- PARAMETER vheight -->
+          <div class="vheight-details">
+                
+                
+            <!-- tittle -->
+            <span class="vheight-title">vheight</span>
+
+            <!-- toggle -->
+            <label class="toggle">
+              <!-- <span class="onoff">OFF</span> -->
+              <input type="checkbox" onclick="showHideVheight()" />
+              <span class="slider round"></span>
+            </label>   
+
+            <!-- parameter options -->
+            <div class="category toggle-vheight hide ">      
+                <input type="text" placeholder="vheight=[player height in pixel]"> 
+            </div>
+        
         </div>
 
         <!-- PARAMETER vcontext -->
@@ -252,20 +302,40 @@
           <!-- parameter options -->
           <div class="category toggle-1 hide ">
 
-              <label for="gdpr-0">
-                  <span class="dot gdpr-0"></span>
-                  <span class="gdpr">0</span>
-                  <span class="description">0 = no = GDPR does not apply</span>
-              </label>
+            <label for="gdpr-0">
+              <span class="dot gdpr-0"></span>
+              <span class="gdpr">0</span>
+              <span class="description">0 = no = GDPR does not apply</span>
+            </label>
 
-              <label for="gdpr-1">
-                  <span class="dot gdpr-1"></span>
-                  <span class="gdpr">1</span>
-                  <span class="description">1 = yes = GDPR applies</span>
-              </label>
+            <label for="gdpr-1">
+              <span class="dot gdpr-1"></span>
+              <span class="gdpr">1</span>
+              <span class="description">1 = yes = GDPR applies</span>
+            </label>
           
           </div>
-       
+        </div>
+
+        <!-- PARAMETER gdpr_consent -->
+        <div class="gdpr_consent-details">
+                
+                
+          <!-- tittle -->
+          <span class="gdpr_consent-title">gdpr_consent</span>
+
+          <!-- toggle -->
+          <label class="toggle">
+            <!-- <span class="onoff">OFF</span> -->
+            <input type="checkbox" onclick="showHideGdprConsent()" />
+            <span class="slider round"></span>
+          </label>   
+
+          <!-- parameter options -->
+          <div class="category toggle-gdpr_consent hide ">      
+              <input type="text" placeholder="gdpr_consent=[GDPR consent string]"> 
+          </div>
+      
       </div>
 
        

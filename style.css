@@ -105,7 +105,9 @@ form .input-box span.details{
  #ptv-ssptv-1:checked ~ .category label .ptv-ssptv-1,
  #gdpr-0:checked ~ .category label .gdpr-0,
  #gdpr-1:checked ~ .category label .gdpr-1,
-
+ #member-0:checked ~ .category label .member-0,
+ #member-1:checked ~ .category label .member-1,
+ #member-2:checked ~ .category label .member-2,
 
  #vplaybackmethod-1:checked ~ .category label .vplaybackmethod-1,
  #vplaybackmethod-2:checked ~ .category label .vplaybackmethod-2,

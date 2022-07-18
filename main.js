@@ -77,6 +77,39 @@ function showHidevplaybackmethod(){
 }
 
 //
+
+//
+
+let toggleShowvwidth = document.querySelector(".toggle-vwidth");
+let isShowvwidth = true;
+
+function showHideVwidth(){
+    isShowvwidth = !isShowvwidth;
+    toggleShowvwidth.classList.toggle("hide", isShowvwidth);
+}
+
+//
+
+let toggleShowvheight = document.querySelector(".toggle-vheight");
+let isShowvheight = true;
+
+function showHideVheight(){
+    isShowvheight = !isShowvheight;
+    toggleShowvheight.classList.toggle("hide", isShowvheight);
+}
+
+//
+
+let toggleGdprConsent = document.querySelector(".toggle-gdpr_consent");
+let isGdprConsent = true;
+
+function showHideGdprConsent(){
+    isGdprConsent = !isGdprConsent;
+    toggleGdprConsent.classList.toggle("hide", isGdprConsent);
+}
+
+//
+
 let toggleShow3 = document.querySelector(".toggle-3");
 let isShow3 = true;
 
