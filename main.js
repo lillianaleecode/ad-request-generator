@@ -142,6 +142,28 @@ function showHideIfa(){
 
 //
 
+let toggleIp = document.querySelector(".toggle-ip");
+let isIp = true;
+
+function showHideIp(){
+    isIp = !isIp;
+    toggleIp.classList.toggle("hide", isIp);
+}
+
+//
+
+let toggleUa = document.querySelector(".toggle-ua");
+let isUa = true;
+
+function showHideUa(){
+    isUa = !isUa;
+    toggleUa.classList.toggle("hide", isUa);
+}
+
+//
+
+//
+
 let toggleIfaType = document.querySelector(".toggle-ifa_type");
 let isIfaType = true;
 
