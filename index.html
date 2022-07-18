@@ -9,343 +9,353 @@
     <link rel="stylesheet" href="style.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
+
 <body>
-  <div class="container">
-    <div class="title">Ad Request's Generator - AdTech </div>
-    <div class="content">
-      <form action="#" class="generatorForm">
-          
-        <div class="ad-details">
+ 
+  <form action="#" class="generatorForm">
+    <div class="container">
+      <div class="title">Ad Request's Generator - AdTech </div>
+        <div class="content">   
+          <div class="ad-details"> </div>
 
-        </div>
+          <!-- PARAMETER /PTV /SSPTV -->
+          <div class="ptv-ssptv-details">
+            <input type="radio" name="ptv-ssptv" id="ptv-ssptv-0">
+            <input type="radio" name="ptv-ssptv" id="ptv-ssptv-1">
+            
+            <!-- tittle -->
+            <span class="ptv-ssptv-title">/PTV /SSPTV</span>
+        
+            <!-- toggle -->
+            <label class="toggle">
+              <!-- <span class="onoff">OFF</span> -->
+              <input type="checkbox" onclick="showHidePtvSsptv()" />
+              <span class="slider round"></span>
+            </label>   
 
-        <!-- PARAMETER /PTV /SSPTV -->
-        <div class="ptv-ssptv-details">
-          <input type="radio" name="ptv-ssptv" id="ptv-ssptv-0">
-          <input type="radio" name="ptv-ssptv" id="ptv-ssptv-1">
-          
-          <!-- tittle -->
-          <span class="ptv-ssptv-title">/PTV /SSPTV</span>
-      
-          <!-- toggle -->
-          <label class="toggle">
-            <!-- <span class="onoff">OFF</span> -->
-            <input type="checkbox" onclick="showHidePtvSsptv()" />
-            <span class="slider round"></span>
-          </label>   
+            <!-- parameter options -->
+            <div class="category toggle-ptv-ssptv hide ">
 
-          <!-- parameter options -->
-          <div class="category toggle-ptv-ssptv hide ">
-
-              <label for="ptv-ssptv-0">
+                <label for="ptv-ssptv-0">
                   <span class="dot ptv-ssptv-0"></span>
                   <span class="ptv-ssptv">/ptv</span>
                   <!-- <span class="description">ptv: </span> -->
               </label>
 
-              <label for="ptv-ssptv-1">
+                <label for="ptv-ssptv-1">
                   <span class="dot ptv-ssptv-1"></span>
                   <span class="ptv-ssptv">/ssptv</span>
                   <!-- <span class="description">/ssptv</span> -->
-              </label>
+                </label>
+            
+            </div>
+        
+        </div>
+
+          <!-- PARAMETER MEMBER -->
+          <div class="member-details">
+          <input type="radio" name="member" id="member-0">
+          <input type="radio" name="member" id="member-1">
+          <input type="radio" name="member" id="member-2">
           
-          </div>
-       
+          
+          <!-- tittle -->
+          <span class="member-title">MEMBER</span>
+      
+          <!-- toggle -->
+          <label class="toggle">
+            <!-- <span class="onoff">OFF</span> -->
+            <input type="checkbox" onclick="showHideMember()" />
+            <span class="slider round"></span>
+          </label>   
+
+          <!-- parameter options -->
+        <div class="category toggle-member hide ">
+
+          <label for="member-0">
+              <span class="dot member-0"></span>
+              <span class="member">7823</span>
+          </label>
+
+          <label for="member-1">
+              <span class="dot member-1"></span>
+              <span class="member">12548</span>     
+          </label>
+          <label for="member-2">
+            <span class="dot member-2"></span>
+            <span class="member">7791</span>
+        </label>
+      
       </div>
 
-      <!-- PARAMETER MEMBER -->
-      <div class="member-details">
-      <input type="radio" name="member" id="member-0">
-      <input type="radio" name="member" id="member-1">
-      <input type="radio" name="member" id="member-2">
-      
         
+      
+      </div>
+
+      
+
+        <!-- PARAMETER id Or inv_code -->
+        <div class="id-details">
+            
+          
         <!-- tittle -->
-        <span class="member-title">MEMBER</span>
+        <span class="id-title">Id=[Xandr placement id]</span>
     
         <!-- toggle -->
         <label class="toggle">
           <!-- <span class="onoff">OFF</span> -->
-          <input type="checkbox" onclick="showHideMember()" />
+          <input type="checkbox" onclick="showHideId()" />
           <span class="slider round"></span>
         </label>   
 
         <!-- parameter options -->
-      <div class="category toggle-member hide ">
-
-        <label for="member-0">
-            <span class="dot member-0"></span>
-            <span class="member">7823</span>
-        </label>
-
-        <label for="member-1">
-            <span class="dot member-1"></span>
-            <span class="member">12548</span>     
-        </label>
-        <label for="member-2">
-          <span class="dot member-2"></span>
-          <span class="member">7791</span>
-      </label>
+        <div class="category toggle-Id hide ">      
+            <input type="text" placeholder="Id=[placement id]"> 
+        </div>
     
-    </div>
-
-       
-     
-    </div>
-
-     
-
-    <!-- PARAMETER id Or inv_code -->
-    <div class="id-details">
-        
-        
-      <!-- tittle -->
-      <span class="id-title">Id=[Xandr placement id]</span>
-  
-      <!-- toggle -->
-      <label class="toggle">
-        <!-- <span class="onoff">OFF</span> -->
-        <input type="checkbox" onclick="showHideId()" />
-        <span class="slider round"></span>
-      </label>   
-
-      <!-- parameter options -->
-      <div class="category toggle-Id hide ">      
-          <input type="text" placeholder="Id=[placement id]"> 
       </div>
-   
-  </div>
 
 
-    <!-- PARAMETER id Or inv_code -->
-    <div class="inv_code-details">
-        
-        
-      <!-- tittle -->
-      <span class="inv_code-title">Id=[Xandr placement name]</span>
-  
-      <!-- toggle -->
-      <label class="toggle">
-        <!-- <span class="onoff">OFF</span> -->
-        <input type="checkbox" onclick="showHideInvCode()" />
-        <span class="slider round"></span>
-      </label>   
-
-      <!-- parameter options -->
-      <div class="category toggle-InvCode hide ">      
-          <input type="text" placeholder="Id=[Xandr name]"> 
-      </div>
-   
-  </div>
-
-
-
-        <!-- PARAMETER vplaybackmethod -->
-        <div class="">
-            <input type="radio" name="vplaybackmethod" id="vplaybackmethod-1">
-            <input type="radio" name="vplaybackmethod" id="vplaybackmethod-2">
-            <input type="radio" name="vplaybackmethod" id="vplaybackmethod-3">
-            <input type="radio" name="vplaybackmethod" id="vplaybackmethod-4">
-            <input type="radio" name="vplaybackmethod" id="vplaybackmethod-5">
-
-            <!-- tittle -->
-            <span class="">vplaybackmethod</span>
-
-             <!-- toggle-->
-             <label class="toggle">
-              <input type="checkbox" onclick="showHidevplaybackmethod()" />
-              <span class="slider round"></span>
-            </label>   
-
-            <!-- parameter options -->
-            <div class="category toggle-vplaybackmethod hide">
-
-                <label for="vplaybackmethod-1">
-                    <span class="dot vplaybackmethod-1"></span>
-                    <span class="vplaybackmethod">1</span>
-                    <span class="description">1 - Auto-play, sound-on</span>
-                </label>
-
-                <label for="vplaybackmethod-2">
-                    <span class="dot vplaybackmethod-2"></span>
-                    <span class="vplaybackmethod">2</span>
-                    <span class="description">2 - Auto-play, sound-off</span>
-                </label>
-
-                <label for="vplaybackmethod-3">
-                    <span class="dot vplaybackmethod-3"></span>
-                    <span class="vplaybackmethod">3</span>
-                    <span class="description">3 - Click-to-play</span>
-                </label>
-
-                <label for="vplaybackmethod-4">
-                    <span class="dot vplaybackmethod-4"></span>
-                    <span class="vplaybackmethod">4</span>
-                    <span class="description">4 - Mouse-over</span>
-                </label>
-
-                <label for="vplaybackmethod-5">
-                    <span class="dot vplaybackmethod-5"></span>
-                    <span class="vplaybackmethod">5</span>
-                    <span class="description">5 - Auto-play, sound unknown</span>
-                </label>
+        <!-- PARAMETER id Or inv_code -->
+        <div class="inv_code-details">
             
-            </div>
-         
-        </div>
-
-          <!-- PARAMETER vwidth -->
-          <div class="vwidth-details">
-              
-              
-            <!-- tittle -->
-            <span class="vwidth-title">vwidth</span>
-        
-            <!-- toggle -->
-            <label class="toggle">
-              <!-- <span class="onoff">OFF</span> -->
-              <input type="checkbox" onclick="showHideVwidth()" />
-              <span class="slider round"></span>
-            </label>   
-
-            <!-- parameter options -->
-            <div class="category toggle-vwidth hide ">      
-                <input type="text" placeholder="vwidth=[player width in pixel]"> 
-            </div>
-        
-        </div>
-
-          <!-- PARAMETER vheight -->
-          <div class="vheight-details">
-                
-                
-            <!-- tittle -->
-            <span class="vheight-title">vheight</span>
-
-            <!-- toggle -->
-            <label class="toggle">
-              <!-- <span class="onoff">OFF</span> -->
-              <input type="checkbox" onclick="showHideVheight()" />
-              <span class="slider round"></span>
-            </label>   
-
-            <!-- parameter options -->
-            <div class="category toggle-vheight hide ">      
-                <input type="text" placeholder="vheight=[player height in pixel]"> 
-            </div>
-        
-        </div>
-
-        <!-- PARAMETER vcontext -->
-        <div class="">
-            <input type="radio" name="vcontext" id="vcontext-1">
-            <input type="radio" name="vcontext" id="vcontext-2">
-            <input type="radio" name="vcontext" id="vcontext-3">
-            <input type="radio" name="vcontext" id="vcontext-4">
-
-            <!-- tittle -->
-            <span class="">vcontext</span>
-
-            <!-- toggle-->
-            <label class="toggle">
-              <input type="checkbox" onclick="showHide3()" />
-              <span class="slider round"></span>
-            </label>   
             
-            <!-- parameter options -->
-
-            <div class="category toggle-3 hide">
-
-                <label for="vcontext-1">
-                    <span class="dot vcontext-1"></span>
-                    <span class="vcontext">1</span>
-                    <span class="description">1 - Linear Pre-roll</span>
-                </label>
-
-                <label for="vcontext-2">
-                    <span class="dot vcontext-2"></span>
-                    <span class="vcontext">2</span>
-                    <span class="description">2 - Linear Mid-roll</span>
-                </label>
-
-                <label for="vcontext-3">
-                    <span class="dot vcontext-3"></span>
-                    <span class="vcontext">3</span>
-                    <span class="description">3 - Linear Post-roll</span>
-                </label>
-
-                <label for="vcontext-4">
-                    <span class="dot vcontext-4"></span>
-                    <span class="vcontext">4</span>
-                    <span class="description">4 - Outstream</span>
-                </label>
-
-            </div>
-        
-        </div>
-
-        <!-- PARAMETER GDPR -->
-        <div class="gdpr-details">
-          <input type="radio" name="gdpr" id="gdpr-0">
-          <input type="radio" name="gdpr" id="gdpr-1">
-          
           <!-- tittle -->
-          <span class="gdpr-title">GDPR</span>
+          <span class="inv_code-title">Id=[Xandr placement name]</span>
       
-          <!-- toggle -->
-          <label class="toggle">
-            <span class="onoff">OFF</span>
-            <input type="checkbox" onclick="showHide1()" />
-            <span class="slider round"></span>
-          </label>   
-
-          <!-- parameter options -->
-          <div class="category toggle-1 hide ">
-
-            <label for="gdpr-0">
-              <span class="dot gdpr-0"></span>
-              <span class="gdpr">0</span>
-              <span class="description">0 = no = GDPR does not apply</span>
-            </label>
-
-            <label for="gdpr-1">
-              <span class="dot gdpr-1"></span>
-              <span class="gdpr">1</span>
-              <span class="description">1 = yes = GDPR applies</span>
-            </label>
-          
-          </div>
-        </div>
-
-        <!-- PARAMETER gdpr_consent -->
-        <div class="gdpr_consent-details">
-                
-                
-          <!-- tittle -->
-          <span class="gdpr_consent-title">gdpr_consent</span>
-
           <!-- toggle -->
           <label class="toggle">
             <!-- <span class="onoff">OFF</span> -->
-            <input type="checkbox" onclick="showHideGdprConsent()" />
+            <input type="checkbox" onclick="showHideInvCode()" />
             <span class="slider round"></span>
           </label>   
 
           <!-- parameter options -->
-          <div class="category toggle-gdpr_consent hide ">      
-              <input type="text" placeholder="gdpr_consent=[GDPR consent string]"> 
+          <div class="category toggle-InvCode hide ">      
+              <input type="text" placeholder="Id=[Xandr name]"> 
           </div>
       
-      </div>
+        </div>
+
+
+
+          <!-- PARAMETER vplaybackmethod -->
+          <div class="">
+              <input type="radio" name="vplaybackmethod" id="vplaybackmethod-1">
+              <input type="radio" name="vplaybackmethod" id="vplaybackmethod-2">
+              <input type="radio" name="vplaybackmethod" id="vplaybackmethod-3">
+              <input type="radio" name="vplaybackmethod" id="vplaybackmethod-4">
+              <input type="radio" name="vplaybackmethod" id="vplaybackmethod-5">
+
+              <!-- tittle -->
+              <span class="">vplaybackmethod</span>
+
+              <!-- toggle-->
+              <label class="toggle">
+                <input type="checkbox" onclick="showHidevplaybackmethod()" />
+                <span class="slider round"></span>
+              </label>   
+
+              <!-- parameter options -->
+              <div class="category toggle-vplaybackmethod hide">
+
+                  <label for="vplaybackmethod-1">
+                      <span class="dot vplaybackmethod-1"></span>
+                      <span class="vplaybackmethod">1</span>
+                      <span class="description">1 - Auto-play, sound-on</span>
+                  </label>
+
+                  <label for="vplaybackmethod-2">
+                      <span class="dot vplaybackmethod-2"></span>
+                      <span class="vplaybackmethod">2</span>
+                      <span class="description">2 - Auto-play, sound-off</span>
+                  </label>
+
+                  <label for="vplaybackmethod-3">
+                      <span class="dot vplaybackmethod-3"></span>
+                      <span class="vplaybackmethod">3</span>
+                      <span class="description">3 - Click-to-play</span>
+                  </label>
+
+                  <label for="vplaybackmethod-4">
+                      <span class="dot vplaybackmethod-4"></span>
+                      <span class="vplaybackmethod">4</span>
+                      <span class="description">4 - Mouse-over</span>
+                  </label>
+
+                  <label for="vplaybackmethod-5">
+                      <span class="dot vplaybackmethod-5"></span>
+                      <span class="vplaybackmethod">5</span>
+                      <span class="description">5 - Auto-play, sound unknown</span>
+                  </label>
+              
+              </div>
+          
+          </div>
+
+            <!-- PARAMETER vwidth -->
+            <div class="vwidth-details">
+                
+                
+              <!-- tittle -->
+              <span class="vwidth-title">vwidth</span>
+          
+              <!-- toggle -->
+              <label class="toggle">
+                <!-- <span class="onoff">OFF</span> -->
+                <input type="checkbox" onclick="showHideVwidth()" />
+                <span class="slider round"></span>
+              </label>   
+
+              <!-- parameter options -->
+              <div class="category toggle-vwidth hide ">      
+                  <input type="text" placeholder="vwidth=[player width in pixel]"> 
+              </div>
+          
+          </div>
+
+            <!-- PARAMETER vheight -->
+            <div class="vheight-details">
+                  
+                  
+              <!-- tittle -->
+              <span class="vheight-title">vheight</span>
+
+              <!-- toggle -->
+              <label class="toggle">
+                <!-- <span class="onoff">OFF</span> -->
+                <input type="checkbox" onclick="showHideVheight()" />
+                <span class="slider round"></span>
+              </label>   
+
+              <!-- parameter options -->
+              <div class="category toggle-vheight hide ">      
+                  <input type="text" placeholder="vheight=[player height in pixel]"> 
+              </div>
+          
+          </div>
+
+          <!-- PARAMETER vcontext -->
+          <div class="">
+              <input type="radio" name="vcontext" id="vcontext-1">
+              <input type="radio" name="vcontext" id="vcontext-2">
+              <input type="radio" name="vcontext" id="vcontext-3">
+              <input type="radio" name="vcontext" id="vcontext-4">
+
+              <!-- tittle -->
+              <span class="">vcontext</span>
+
+              <!-- toggle-->
+              <label class="toggle">
+                <input type="checkbox" onclick="showHide3()" />
+                <span class="slider round"></span>
+              </label>   
+              
+              <!-- parameter options -->
+
+              <div class="category toggle-3 hide">
+
+                  <label for="vcontext-1">
+                      <span class="dot vcontext-1"></span>
+                      <span class="vcontext">1</span>
+                      <span class="description">1 - Linear Pre-roll</span>
+                  </label>
+
+                  <label for="vcontext-2">
+                      <span class="dot vcontext-2"></span>
+                      <span class="vcontext">2</span>
+                      <span class="description">2 - Linear Mid-roll</span>
+                  </label>
+
+                  <label for="vcontext-3">
+                      <span class="dot vcontext-3"></span>
+                      <span class="vcontext">3</span>
+                      <span class="description">3 - Linear Post-roll</span>
+                  </label>
+
+                  <label for="vcontext-4">
+                      <span class="dot vcontext-4"></span>
+                      <span class="vcontext">4</span>
+                      <span class="description">4 - Outstream</span>
+                  </label>
+
+              </div>
+          
+          </div>
+
+          <!-- PARAMETER GDPR -->
+          <div class="gdpr-details">
+            <input type="radio" name="gdpr" id="gdpr-0">
+            <input type="radio" name="gdpr" id="gdpr-1">
+            
+            <!-- tittle -->
+            <span class="gdpr-title">GDPR</span>
+        
+            <!-- toggle -->
+            <label class="toggle">
+              <span class="onoff">OFF</span>
+              <input type="checkbox" onclick="showHide1()" />
+              <span class="slider round"></span>
+            </label>   
+
+            <!-- parameter options -->
+            <div class="category toggle-1 hide ">
+
+              <label for="gdpr-0">
+                <span class="dot gdpr-0"></span>
+                <span class="gdpr">0</span>
+                <span class="description">0 = no = GDPR does not apply</span>
+              </label>
+
+              <label for="gdpr-1">
+                <span class="dot gdpr-1"></span>
+                <span class="gdpr">1</span>
+                <span class="description">1 = yes = GDPR applies</span>
+              </label>
+            
+            </div>
+          </div>
+
+          <!-- PARAMETER gdpr_consent -->
+          <div class="gdpr_consent-details">
+                  
+                  
+            <!-- tittle -->
+            <span class="gdpr_consent-title">gdpr_consent</span>
+
+            <!-- toggle -->
+            <label class="toggle">
+              <!-- <span class="onoff">OFF</span> -->
+              <input type="checkbox" onclick="showHideGdprConsent()" />
+              <span class="slider round"></span>
+            </label>   
+
+            <!-- parameter options -->
+            <div class="category toggle-gdpr_consent hide ">      
+                <input type="text" placeholder="gdpr_consent=[GDPR consent string]"> 
+            </div>
+        
+        </div>
 
        
 
-        <div class="button">
-          <input type="submit" value="SUBMIT" onclick="generatedata()">
-        </div>
-      </form>
+   
+
+      </div>
     </div>
-  </div>
+    <div class="container">
+      <div class="title">WEB ONLY PARAMETERS: </div>
+      <div class="button">
+        <input type="submit" value="SUBMIT" onclick="generatedata()">
+      </div>
+    </div>
+
+    
+    
+  </form>
+  
+
+  
 
 
 <script src="main.js"></script>
