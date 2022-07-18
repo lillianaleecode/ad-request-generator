@@ -13,7 +13,7 @@
   <div class="container">
     <div class="title">Ad Request's Generator - AdTech </div>
     <div class="content">
-      <form action="#">
+      <form action="#" class="generatorForm">
           
         <div class="ad-details">
           <div class="input-box">
@@ -32,39 +32,105 @@
           
         </div>
 
-        <!-- PARAMETER GDPR -->
-        <div class="gdpr-details">
-            <input type="radio" name="gdpr" id="gdpr-0">
-            <input type="radio" name="gdpr" id="gdpr-1">
-            
-            <!-- tittle -->
-            <span class="gdpr-title">GDPR</span>
+        <!-- PARAMETER /PTV /SSPTV -->
+        <div class="ptv-ssptv-details">
+          <input type="radio" name="ptv-ssptv" id="ptv-ssptv-0">
+          <input type="radio" name="ptv-ssptv" id="ptv-ssptv-1">
+          
+          <!-- tittle -->
+          <span class="ptv-ssptv-title">/PTV /SSPTV</span>
+      
+          <!-- toggle -->
+          <label class="toggle">
+            <!-- <span class="onoff">OFF</span> -->
+            <input type="checkbox" onclick="showHidePtvSsptv()" />
+            <span class="slider round"></span>
+          </label>   
+
+          <!-- parameter options -->
+          <div class="category toggle-ptv-ssptv hide ">
+
+              <label for="ptv-ssptv-0">
+                  <span class="dot ptv-ssptv-0"></span>
+                  <span class="ptv-ssptv">/ptv</span>
+                  <!-- <span class="description">ptv: </span> -->
+              </label>
+
+              <label for="ptv-ssptv-1">
+                  <span class="dot ptv-ssptv-1"></span>
+                  <span class="ptv-ssptv">/ssptv</span>
+                  <!-- <span class="description">/ssptv</span> -->
+              </label>
+          
+          </div>
+       
+      </div>
+
+      <!-- PARAMETER MEMBER -->
+      <div class="member-details">
         
-            <!-- toggle -->
-            <label class="toggle">
-              <span class="onoff">OFF</span>
-              <input type="checkbox" onclick="showHide1()" />
-              <span class="slider round"></span>
-            </label>   
+        
+        <!-- tittle -->
+        <span class="member-title">MEMBER</span>
+    
+        <!-- toggle -->
+        <label class="toggle">
+          <!-- <span class="onoff">OFF</span> -->
+          <input type="checkbox" onclick="showHideMember()" />
+          <span class="slider round"></span>
+        </label>   
 
-            <!-- parameter options -->
-            <div class="category toggle-1 hide ">
-
-                <label for="gdpr-0">
-                    <span class="dot gdpr-0"></span>
-                    <span class="gdpr">0</span>
-                    <span class="description">0 = no = GDPR does not apply</span>
-                </label>
-
-                <label for="gdpr-1">
-                    <span class="dot gdpr-1"></span>
-                    <span class="gdpr">1</span>
-                    <span class="description">1 = yes = GDPR applies</span>
-                </label>
-            
-            </div>
-         
+        <!-- parameter options -->
+        <div class="category toggle-member hide ">      
+            <input type="text" placeholder="Member"> 
         </div>
+     
+    </div>
+
+    <!-- PARAMETER id Or inv_code -->
+    <div class="id-details">
+        
+        
+      <!-- tittle -->
+      <span class="id-title">Id=[Xandr placement id]</span>
+  
+      <!-- toggle -->
+      <label class="toggle">
+        <!-- <span class="onoff">OFF</span> -->
+        <input type="checkbox" onclick="showHideId()" />
+        <span class="slider round"></span>
+      </label>   
+
+      <!-- parameter options -->
+      <div class="category toggle-Id hide ">      
+          <input type="text" placeholder="Id=[Xandr placement id]"> 
+      </div>
+   
+  </div>
+
+
+    <!-- PARAMETER id Or inv_code -->
+    <div class="inv_code-details">
+        
+        
+      <!-- tittle -->
+      <span class="inv_code-title">Id=[Xandr placement name]</span>
+  
+      <!-- toggle -->
+      <label class="toggle">
+        <!-- <span class="onoff">OFF</span> -->
+        <input type="checkbox" onclick="showHideInvCode()" />
+        <span class="slider round"></span>
+      </label>   
+
+      <!-- parameter options -->
+      <div class="category toggle-InvCode hide ">      
+          <input type="text" placeholder="Id=[Xandr placement name]"> 
+      </div>
+   
+  </div>
+
+
 
         <!-- PARAMETER vplaybackmethod -->
         <div class="">
@@ -79,12 +145,12 @@
 
              <!-- toggle-->
              <label class="toggle">
-              <input type="checkbox" onclick="showHide2()" />
+              <input type="checkbox" onclick="showHidevplaybackmethod()" />
               <span class="slider round"></span>
             </label>   
 
             <!-- parameter options -->
-            <div class="category toggle-2 hide">
+            <div class="category toggle-vplaybackmethod hide">
 
                 <label for="vplaybackmethod-1">
                     <span class="dot vplaybackmethod-1"></span>
@@ -168,10 +234,44 @@
         
         </div>
 
+        <!-- PARAMETER GDPR -->
+        <div class="gdpr-details">
+          <input type="radio" name="gdpr" id="gdpr-0">
+          <input type="radio" name="gdpr" id="gdpr-1">
+          
+          <!-- tittle -->
+          <span class="gdpr-title">GDPR</span>
+      
+          <!-- toggle -->
+          <label class="toggle">
+            <span class="onoff">OFF</span>
+            <input type="checkbox" onclick="showHide1()" />
+            <span class="slider round"></span>
+          </label>   
+
+          <!-- parameter options -->
+          <div class="category toggle-1 hide ">
+
+              <label for="gdpr-0">
+                  <span class="dot gdpr-0"></span>
+                  <span class="gdpr">0</span>
+                  <span class="description">0 = no = GDPR does not apply</span>
+              </label>
+
+              <label for="gdpr-1">
+                  <span class="dot gdpr-1"></span>
+                  <span class="gdpr">1</span>
+                  <span class="description">1 = yes = GDPR applies</span>
+              </label>
+          
+          </div>
+       
+      </div>
+
        
 
         <div class="button">
-          <input type="submit" value="SUBMIT">
+          <input type="submit" value="SUBMIT" onclick="generatedata()">
         </div>
       </form>
     </div>

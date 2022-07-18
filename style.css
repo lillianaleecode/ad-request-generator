@@ -100,8 +100,12 @@ form .input-box span.details{
   border: 5px solid transparent;
   transition: all 0.3s ease;
 }
+
+ #ptv-ssptv-0:checked ~ .category label .ptv-ssptv-0,
+ #ptv-ssptv-1:checked ~ .category label .ptv-ssptv-1,
  #gdpr-0:checked ~ .category label .gdpr-0,
  #gdpr-1:checked ~ .category label .gdpr-1,
+
 
  #vplaybackmethod-1:checked ~ .category label .vplaybackmethod-1,
  #vplaybackmethod-2:checked ~ .category label .vplaybackmethod-2,
