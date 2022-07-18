@@ -16,16 +16,6 @@ toggle.addEventListener('click', () => {
 
 
 //
-
-let toggleShowPtvSsptv = document.querySelector(".toggle-ptv-ssptv");
-let isShowPtvSsptv = true;
-
-function showHidePtvSsptv(){
-    isShowPtvSsptv = !isShowPtvSsptv;
-    toggleShowPtvSsptv.classList.toggle("hide", isShowPtvSsptv);
-}
-
-//
 let toggleShowId = document.querySelector(".toggle-Id");
 let isShowId = true;
 
