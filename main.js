@@ -184,3 +184,10 @@ function generateData(){
             ...acc, [input.id]: input.value }), {})
         )
     }
+
+function getData(){
+    x = document.querySelector('input[name="ptv-ssptv"]:checked');
+    console.log(x.value)
+        
+    
+    }
