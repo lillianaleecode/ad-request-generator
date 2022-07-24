@@ -186,8 +186,26 @@ function generateData(){
     }
 
 function getData(){
-    x = document.querySelector('input[name="ptv-ssptv"]:checked');
-    console.log(x.value)
+
+    
+    ptvOrSsptv = document.querySelector('input[name="ptv-ssptv"]:checked');
+    member = document.querySelector('input[name="member"]:checked');
+    idparam = document.getElementById("idparam")
+
+    // console.log ( y.value + x.value)
+
+    // if (ptvOrSsptv.value == null){
+    //     ptvOrSsptv == "";
+    //     console.log(ptvOrSsptv.value)
+    // }else{
         
+    // }
+
+    document.getElementById("ad-details").insertAdjacentHTML('afterend', ptvOrSsptv.value + member.value + "&" + "id=" + idparam.value + "&" );
+
+
+            
     
     }
+
+    
