@@ -1,3 +1,5 @@
+//TOGGLES and RADIO BUTTONS
+
 const toggle = document.querySelector('.toggle input')
 
 toggle.addEventListener('click', () => {
@@ -5,15 +7,6 @@ toggle.addEventListener('click', () => {
     onOff.textContent = toggle.checked ? 'ON' : 'OFF'
     
 })
-
-//to disable radio buttons:
-// if (onOff.textContent = 'OFF'){
-//     var radio = onOff;
-//     radio.checked = false;
-
-// }
-
-
 
 //
 let toggleShowId = document.querySelector(".toggle-Id");
@@ -35,8 +28,6 @@ function showHideInvCode(){
 }
 
 //
-
-
 let toggleShowMember = document.querySelector(".toggle-member");
 let isShowMember = true;
 
@@ -46,7 +37,6 @@ function showHideMember(){
 }
 
 //
-
 let toggleShow = document.querySelector(".toggle-1");
 let isShow = true;
 
@@ -57,7 +47,6 @@ function showHide1(){
 
 
 //
-
 let toggleShowvplaybackmethod = document.querySelector(".toggle-vplaybackmethod");
 let isShowvplaybackmethod = true;
 
@@ -67,9 +56,6 @@ function showHidevplaybackmethod(){
 }
 
 //
-
-//
-
 let toggleShowvwidth = document.querySelector(".toggle-vwidth");
 let isShowvwidth = true;
 
@@ -79,7 +65,6 @@ function showHideVwidth(){
 }
 
 //
-
 let toggleShowvheight = document.querySelector(".toggle-vheight");
 let isShowvheight = true;
 
@@ -89,7 +74,6 @@ function showHideVheight(){
 }
 
 //
-
 let toggleGdprConsent = document.querySelector(".toggle-gdpr_consent");
 let isGdprConsent = true;
 
@@ -99,8 +83,6 @@ function showHideGdprConsent(){
 }
 
 //
-
-
 let toggleReferrer = document.querySelector(".toggle-referrer");
 let isReferrer = true;
 
@@ -108,8 +90,8 @@ function showHideReferrer(){
     isReferrer = !isReferrer;
     toggleReferrer.classList.toggle("hide", isReferrer);
 }
-//
 
+//
 let toggleAppid = document.querySelector(".toggle-appid");
 let isAppid = true;
 
@@ -119,7 +101,6 @@ function showHideAppid(){
 }
 
 //
-
 let toggleIfa = document.querySelector(".toggle-ifa");
 let isIfa = true;
 
@@ -129,9 +110,6 @@ function showHideIfa(){
 }
 
 //
-
-//
-
 let toggleIp = document.querySelector(".toggle-ip");
 let isIp = true;
 
@@ -141,7 +119,6 @@ function showHideIp(){
 }
 
 //
-
 let toggleUa = document.querySelector(".toggle-ua");
 let isUa = true;
 
@@ -151,9 +128,6 @@ function showHideUa(){
 }
 
 //
-
-//
-
 let toggleIfaType = document.querySelector(".toggle-ifa_type");
 let isIfaType = true;
 
@@ -162,23 +136,7 @@ function showHideIfaType(){
     toggleIfaType.classList.toggle("hide", isIfaType);
 }
 
-//
-
-//
-
-//submit button: get form data after the submit button
-
-function generateData(){
-    Array.from(document.querySelectorAll('#generatorForm')).reduce((acc, input) =>({
-        ...acc, [input.id]: input.value }), {})
-    
-        console.log(Array.from(document.querySelectorAll('#generatorForm')).reduce((acc, input) =>({
-            ...acc, [input.id]: input.value }), {})
-        )
-    }
-
-    const outputid = document.getElementById("outputid")
-
+//concatenate
 function getData(){
 
     
@@ -198,8 +156,7 @@ function getData(){
     ipparam = document.getElementById("ipparam");
     ua = document.getElementById("ua");
 
-
-
+    //insert concatenated parameters to the page
     document.getElementById("ad-details").insertAdjacentHTML('afterend', (ptvOrSsptv ? ptvOrSsptv.value : "" ) + (member ? member.value : "") + (idparam ? idparam.value :"") + (invcode ? invcode.value :"") + (vplaybackmethod ? vplaybackmethod.value : "") + (vwidth ? vwidth.value :"") + (vheight ? vheight.value :"")+ (gdpr ? gdpr.value :"")+ (vheight ? vheight.value :"")+ (gconsent ? gconsent.value :"") + (referrerparam ? referrerparam.value :"") + (appid ? appid.value :"")  + (ifa? ifa.value :"")  + (ifa_type? ifa_type.value :"") + (ipparam? ipparam.value :"") + (ua ? ua.value :""));
 
 
