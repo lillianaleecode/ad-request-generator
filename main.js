@@ -185,13 +185,19 @@ function generateData(){
         )
     }
 
+    const outputid = document.getElementById("outputid")
+
 function getData(){
 
     
     ptvOrSsptv = document.querySelector('input[name="ptv-ssptv"]:checked');
     member = document.querySelector('input[name="member"]:checked');
     idparam = document.getElementById("idparam")
+    idparamConcat = "id=" + idparam.value 
 
+    
+
+    
     // console.log ( y.value + x.value)
 
     // if (ptvOrSsptv.value == null){
@@ -201,10 +207,9 @@ function getData(){
         
     // }
 
-    document.getElementById("ad-details").insertAdjacentHTML('afterend', ptvOrSsptv.value + member.value + "&" + "id=" + idparam.value + "&" );
+    document.getElementById("ad-details").insertAdjacentHTML('afterend', (ptvOrSsptv ? ptvOrSsptv.value : "" ) + (member ? member.value : "")  + "id="+ (idparam ? idparam.value :"")  );
 
 
-            
     
     }
 
