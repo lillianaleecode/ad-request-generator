@@ -192,25 +192,24 @@ function getData(){
     
     ptvOrSsptv = document.querySelector('input[name="ptv-ssptv"]:checked');
     member = document.querySelector('input[name="member"]:checked');
-    idparam = document.getElementById("idparam")
-    idparamConcat = "id=" + idparam.value 
+    idparam = document.getElementById("idparam");
+    invcode = document.getElementById("invcode");
+    vplaybackmethod = document.querySelector('input[name="vplaybackmethod"]:checked');
 
-    
 
-    
-    // console.log ( y.value + x.value)
 
-    // if (ptvOrSsptv.value == null){
-    //     ptvOrSsptv == "";
-    //     console.log(ptvOrSsptv.value)
-    // }else{
-        
-    // }
-
-    document.getElementById("ad-details").insertAdjacentHTML('afterend', (ptvOrSsptv ? ptvOrSsptv.value : "" ) + (member ? member.value : "")  + "id="+ (idparam ? idparam.value :"")  );
+    document.getElementById("ad-details").insertAdjacentHTML('afterend', (ptvOrSsptv ? ptvOrSsptv.value : "" ) + (member ? member.value : "") + (idparam ? idparam.value :"") + (invcode ? invcode.value :"") + (vplaybackmethod ? vplaybackmethod.value : "") );
 
 
     
     }
 
-    
+function concatIdparam(){
+    const x = document.getElementById("idparam");
+    x.value = "id=" + x.value + "&"
+}
+
+function concatInvcode(){
+    const x = document.getElementById("invcode");
+    x.value = "inv_code=" + x.value + "&"
+}

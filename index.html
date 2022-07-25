@@ -23,7 +23,7 @@
 
             <!-- PARAMETER /PTV /SSPTV -->
             <div class="ptv-ssptv-details">
-              <input type="radio" value="https://ib.adnxs.com/ptv?" name="ptv-ssptv" id="ptv-ssptv-0">
+              <input type="radio" value="https://ib.adnxs.com/ptv?" name="ptv-ssptv" id="ptv-ssptv-0" checked="checked">
               <input type="radio" value="https://ib.adnxs.com/ssptv?" name="ptv-ssptv" id="ptv-ssptv-1">
               
               <!-- tittle -->
@@ -48,7 +48,7 @@
 
             <!-- PARAMETER MEMBER -->
             <div class="member-details">
-              <input type="radio" value="member=7823&" name="member" id="member-0">
+              <input type="radio" value="member=7823&" name="member" id="member-0" checked="checked">
               <input type="radio" value="member=12548&" name="member" id="member-1">
               <input type="radio" value="member=7791&" name="member" id="member-2">
           
@@ -91,7 +91,8 @@
 
               <!-- parameter options -->
               <div class="category toggle-Id hide ">      
-                <input id="idparam" type="number" placeholder="Id=[placement id]"> 
+                <input id="idparam" type="text" placeholder="insert ID number" onchange="concatIdparam()"> 
+                <p id="outputid"></p>
               </div>
           
             </div>
@@ -100,7 +101,7 @@
             <div class="inv_code-details">
               
               <!-- tittle -->
-              <span class="inv_code-title">Id=[Xandr placement name]</span>
+              <span class="inv_code-title">inv_code=[Xandr placement name]</span>
           
               <!-- toggle -->
               <label class="toggle">
@@ -111,18 +112,18 @@
 
               <!-- parameter options -->
               <div class="category toggle-InvCode hide ">      
-                <input type="text" placeholder="Id=[Xandr name]"> 
+                <input id="invcode" onchange="concatInvcode()" type="text" placeholder="insert name"> 
               </div>
           
             </div>
 
             <!-- PARAMETER vplaybackmethod -->
             <div class="">
-              <input type="radio" value="" name="vplaybackmethod" id="vplaybackmethod-1">
-              <input type="radio" value="" name="vplaybackmethod" id="vplaybackmethod-2">
-              <input type="radio" value="" name="vplaybackmethod" id="vplaybackmethod-3">
-              <input type="radio" value="" name="vplaybackmethod" id="vplaybackmethod-4">
-              <input type="radio" value="" name="vplaybackmethod" id="vplaybackmethod-5">
+              <input type="radio" value="vplaybackmethod=1&" name="vplaybackmethod" id="vplaybackmethod-1">
+              <input type="radio" value="vplaybackmethod=2&" name="vplaybackmethod" id="vplaybackmethod-2">
+              <input type="radio" value="vplaybackmethod=3&" name="vplaybackmethod" id="vplaybackmethod-3">
+              <input type="radio" value="vplaybackmethod=4&" name="vplaybackmethod" id="vplaybackmethod-4">
+              <input type="radio" value="vplaybackmethod=5&" name="vplaybackmethod" id="vplaybackmethod-5">
 
               <!-- tittle -->
               <span class="">vplaybackmethod</span>
