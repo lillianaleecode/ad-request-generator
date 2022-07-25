@@ -166,14 +166,6 @@ function showHideIfaType(){
 
 //
 
-let toggleShow3 = document.querySelector(".toggle-3");
-let isShow3 = true;
-
-function showHide3(){
-    isShow3 = !isShow3;
-    toggleShow3.classList.toggle("hide", isShow3);
-}
-
 //submit button: get form data after the submit button
 
 function generateData(){
