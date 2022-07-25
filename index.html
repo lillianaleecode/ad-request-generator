@@ -186,7 +186,7 @@
 
               <!-- parameter options -->
               <div class="category toggle-vwidth hide ">      
-                <input type="text" placeholder="vwidth=[player width in pixel]"> 
+                <input id="vwidth" type="text" placeholder="insert value in pixels" onchange="concatvwidth()"> 
               </div>
           
             </div>
@@ -206,7 +206,7 @@
 
               <!-- parameter options -->
               <div class="category toggle-vheight hide ">      
-                <input type="text" placeholder="vheight=[player height in pixel]"> 
+                <input id="vheight" type="text" placeholder="insert value in pixels" onchange="concatvheight()"> 
               </div>
 
             </div>
@@ -214,8 +214,8 @@
 
             <!-- PARAMETER GDPR -->
             <div class="gdpr-details">
-              <input type="radio" value="" name="gdpr" id="gdpr-0">
-              <input type="radio" value="" name="gdpr" id="gdpr-1">
+              <input type="radio" value="gdpr=0&" name="gdpr" id="gdpr-0">
+              <input type="radio" value="gdpr=1&" name="gdpr" id="gdpr-1">
               
               <!-- tittle -->
               <span class="gdpr-title">GDPR</span>
@@ -260,7 +260,7 @@
 
               <!-- parameter options -->
               <div class="category toggle-gdpr_consent hide ">      
-                <input type="text" placeholder="gdpr_consent=[GDPR consent string]"> 
+                <input id="gconsent" type="text" placeholder="insert string" onchange="concatGdprconsent()"> 
               </div>
           
             </div>
@@ -286,7 +286,7 @@
 
           <!-- parameter options -->
           <div class="category toggle-referrer hide ">      
-            <input type="text" placeholder="referrer=[URL, value encoded]"> 
+            <input id="referrerparam" type="text" placeholder="insert URL" onchange="concatreferrer()"> 
           </div>
       
         </div>
@@ -313,7 +313,7 @@
 
           <!-- parameter options -->
           <div class="category toggle-appid hide ">      
-            <input type="text" placeholder="appid=[bundle ID of the mobile application]"> 
+            <input id="appid"  onchange="concatappid()" type="text" placeholder="insert ID"> 
           </div>
       
         </div>
@@ -333,22 +333,22 @@
 
           <!-- parameter options -->
           <div class="category toggle-ifa hide ">      
-            <input type="text" placeholder="appid=[unique device identifier using UUID standard (8-4-4-4-12)]"> 
+            <input id="ifa"  onchange="concatifa()" type="text" placeholder="insert identifier"> 
           </div>
       
         </div>
 
         <!-- PARAMETER ifa_type -->
         <div class="ifa_type-details">
-          <input type="radio" value="" name="ifa_type" id="ifa_type-0">
-          <input type="radio" value="" name="ifa_type" id="ifa_type-1">
-          <input type="radio" value="" name="ifa_type" id="ifa_type-2">
-          <input type="radio" value="" name="ifa_type" id="ifa_type-3">
-          <input type="radio" value="" name="ifa_type" id="ifa_type-4">
-          <input type="radio" value="" name="ifa_type" id="ifa_type-5">
+          <input type="radio" value="ifa_type=aaid&" name="ifa_type" id="ifa_type-0">
+          <input type="radio" value="ifa_type=idfa&" name="ifa_type" id="ifa_type-1">
+          <input type="radio" value="ifa_type=afai&" name="ifa_type" id="ifa_type-2">
+          <input type="radio" value="ifa_type=msai&" name="ifa_type" id="ifa_type-3">
+          <input type="radio" value="ifa_type=rida&" name="ifa_type" id="ifa_type-4">
+          <input type="radio" value="ifa_type=ppid&" name="ifa_type" id="ifa_type-5">
           
           <!-- tittle -->
-          <span class="ifa_type-title">ifa-type</span>
+          <span class="ifa_type-title">ifa_type</span>
       
           <!-- toggle -->
           <label class="toggle">
@@ -413,7 +413,7 @@
 
           <!-- parameter options -->
           <div class="category toggle-ip hide ">      
-            <input type="text" placeholder="ip=[IP address of the device making the ad request, e.g. 207.237.150.246]"> 
+            <input id="ipparam" onchange="concatipparam()" type="text" placeholder="insert api adress"> 
           </div>
       
         </div>
@@ -433,7 +433,7 @@
 
           <!-- parameter options -->
           <div class="category toggle-ua hide ">      
-            <input type="text" placeholder="ua=[user agent string associated with the device making the request]"> 
+            <input id="ua" onchange="concatua()"type="text" placeholder="insert string"> 
           </div>
       
         </div>
