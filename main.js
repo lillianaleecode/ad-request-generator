@@ -22,16 +22,7 @@ function showHideId(){
     invCodeOnOff = document.getElementById("invCodeOnOff");
     idparam = document.getElementById("idparam");
 
-    if (idOnOff.textContent = "ON"){
-        // document.getElementById("invcode").value = "already has an Id code!";
-        invCodetoggle.setAttribute('disabled', '');
-    }
-    if (idOnOff.textContent = "OFF" && idparam.textContent != ""){
-        // document.getElementById("invcode").value = "already has an Id code!";
-        invCodetoggle.removeAttribute('disabled');
-    }
     
-   
     
 }
 
@@ -43,6 +34,27 @@ let isShowInvCode = true;
 function showHideInvCode(){
     isShowInvCode = !isShowInvCode;
     toggleShowInvCode.classList.toggle("hide", isShowInvCode);
+
+    idtoggle = document.getElementById("idtoggle");
+    idOnOff = document.getElementById("idOnOff");
+    invCodetoggle = document.getElementById("invCodetoggle");
+    invCodeOnOff = document.getElementById("invCodeOnOff");
+    invcode = document.getElementById("invcode");
+    idparam = document.getElementById("idparam");
+
+    if (invCodeOnOff.textContent = "ON"){
+        idtoggle.setAttribute('disabled', '');
+    }
+    if(invCodeOnOff.textContent = "OFF"){
+        invcode.value = "";
+         idtoggle.setAttribute('disabled', '');
+    }
+    if (invCodeOnOff.textContent = "OFF" && idparam.textContent != ""){
+        invCodetoggle.removeAttribute('disabled');
+    }
+
+
+
 }
 
 //
@@ -229,19 +241,4 @@ function concatua(){
     //as this is the last parameter, it doesnt end with the &
 }
 
-// function idOrInvcodeValidation(){
-//     idtoggle = document.getElementById("idtoggle");
-//     idOnOff = document.getElementById("idOnOff");
-//     invCodetoggle = document.getElementById("invCodetoggle");
-//     invCodeOnOff = document.getElementById("invCodeOnOff");
-
-//     if (idOnOff.textContent = "ON"){
-//         document.getElementById("invcode").value = "already has an Id code!";
-//         invCodetoggle.setAttribute('disabled', '');
-//     }
-//     if (invCodeOnOff.textContent = "ON"){
-//         idtoggle.setAttribute('disabled', '');
-//     }else {
-
-//     }
     
