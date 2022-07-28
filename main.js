@@ -97,6 +97,11 @@ let isShowvplaybackmethod = true;
 function showHidevplaybackmethod(){
     isShowvplaybackmethod = !isShowvplaybackmethod;
     toggleShowvplaybackmethod.classList.toggle("hide", isShowvplaybackmethod);
+
+    if(idOnOff.textContent = "OFF"){
+        idparam.value = "";
+        invCodetoggle.setAttribute('disabled', '');
+    }
 }
 
 //
