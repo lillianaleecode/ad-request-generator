@@ -20,7 +20,21 @@ function showHideId(){
     idOnOff = document.getElementById("idOnOff");
     invCodetoggle = document.getElementById("invCodetoggle");
     invCodeOnOff = document.getElementById("invCodeOnOff");
+    invcode = document.getElementById("invcode");
     idparam = document.getElementById("idparam");
+
+    if (idOnOff.textContent = "ON"){
+        invCodetoggle.setAttribute('disabled', '');
+    }
+    if(idOnOff.textContent = "OFF"){
+        idparam.value = "";
+        invCodetoggle.setAttribute('disabled', '');
+    }
+    if (idOnOff.textContent = "OFF" && invcode.textContent != ""){
+        idtoggle.removeAttribute('disabled');
+    }
+
+
 
     
     
