@@ -211,6 +211,7 @@
 
             </div>
 
+
             <!-- PARAMETER GDPR -->
             <div class="gdpr-details">
               <input type="radio" value="gdpr=0&" name="gdpr" id="gdpr-0">
@@ -437,19 +438,33 @@
       
         </div>
 
-        
-
-        <!-- SUBMIT BUTTON -->
-        <div class="button">
-          <input type="button" value="Generate Link:)" onclick="getData()">
-        </div>
+    
 
       </div>
       
       <br>
 
+      <!-- GENERATED URL -->
+      <div class=" urlcontainer">
+        <div class="title"> URL </div>
+
+          <!-- SUBMIT BUTTON -->
+      <div class="button">
+        <p id="ad-details" class="ad-details" > 
+          <!-- ...append insertAdjacentHTML function here... -->
+        </p>
+
+        <br>
+     
+        <input type="button" value="Generate Link:)" onclick="getData()">
+        
+      </div>
+
+      </div>
+
+    
     </form>
-    <div id="ad-details" class="ad-details"> </div>
+    
     <!-- javascript -->
     <script src="main.js"></script>
 
