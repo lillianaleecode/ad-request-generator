@@ -7,6 +7,11 @@ toggle.addEventListener('click', () => {
     onOff.textContent = toggle.checked ? 'ON' : 'OFF'
     
 })
+toggle.addEventListener('click', () => {
+    const onOff = toggle.parentNode.querySelector('.onoffinv')
+    onOff.textContent = toggle.checked ? 'ON' : 'OFF'
+    
+})
 
 //
 let toggleShowId = document.querySelector(".toggle-Id");
@@ -23,16 +28,22 @@ function showHideId(){
     invcode = document.getElementById("invcode");
     idparam = document.getElementById("idparam");
 
-    if (idOnOff.textContent = "ON"){
-        invCodetoggle.setAttribute('disabled', '');
+    if (! document.querySelector(".toggle-Id").classList.contains("hide")){
+        invCodetoggle.setAttribute('disabled', '')
     }
-    if(idOnOff.textContent = "OFF"){
-        idparam.value = "";
-        invCodetoggle.setAttribute('disabled', '');
+    if ( document.querySelector(".toggle-Id").classList.contains("hide")){
+        invCodetoggle.removeAttribute('disabled')
     }
-    if (idOnOff.textContent = "OFF" && invcode.textContent != ""){
-        idtoggle.removeAttribute('disabled');
-    }
+    // if (idOnOff.textContent = "ON"){
+    //     invCodetoggle.setAttribute('disabled', '');
+    // }
+    // if(idOnOff.textContent = "OFF"){
+    //     idparam.value = "";
+    //     invCodetoggle.setAttribute('disabled', '');
+    // }
+    // if (idOnOff.textContent = "OFF" && invcode.textContent != ""){
+    //     idtoggle.removeAttribute('disabled');
+    // }
 
 
 
@@ -56,16 +67,23 @@ function showHideInvCode(){
     invcode = document.getElementById("invcode");
     idparam = document.getElementById("idparam");
 
-    if (invCodeOnOff.textContent = "ON"){
-        idtoggle.setAttribute('disabled', '');
+    if (! document.querySelector(".toggle-InvCode").classList.contains("hide")){
+        idtoggle.setAttribute('disabled', '')
     }
-    if(invCodeOnOff.textContent = "OFF"){
-        invcode.value = "";
-         idtoggle.setAttribute('disabled', '');
+    if ( document.querySelector(".toggle-InvCode").classList.contains("hide")){
+        idtoggle.removeAttribute('disabled')
     }
-    if (invCodeOnOff.textContent = "OFF" && idparam.textContent != ""){
-        invCodetoggle.removeAttribute('disabled');
-    }
+
+    // if (invCodeOnOff.textContent = "ON"){
+    //     idtoggle.setAttribute('disabled', '');
+    // }
+    // if(invCodeOnOff.textContent = "OFF"){
+    //     invcode.value = "";
+    //      idtoggle.setAttribute('disabled', '');
+    // }
+    // if (invCodeOnOff.textContent = "OFF" && idparam.textContent != ""){
+    //     invCodetoggle.removeAttribute('disabled');
+    // }
 
 
 
