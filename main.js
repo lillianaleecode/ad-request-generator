@@ -7,11 +7,6 @@ toggle.addEventListener('click', () => {
     onOff.textContent = toggle.checked ? 'ON' : 'OFF'
     
 })
-toggle.addEventListener('click', () => {
-    const onOff = toggle.parentNode.querySelector('.onoffinv')
-    onOff.textContent = toggle.checked ? 'ON' : 'OFF'
-    
-})
 
 //
 let toggleShowId = document.querySelector(".toggle-Id");
@@ -143,10 +138,6 @@ function showHidevplaybackmethod(){
     isShowvplaybackmethod = !isShowvplaybackmethod;
     toggleShowvplaybackmethod.classList.toggle("hide", isShowvplaybackmethod);
 
-    if(idOnOff.textContent = "OFF"){
-        idparam.value = "";
-        invCodetoggle.setAttribute('disabled', '');
-    }
 }
 
 //
@@ -228,6 +219,15 @@ let isIfaType = true;
 function showHideIfaType(){
     isIfaType = !isIfaType;
     toggleIfaType.classList.toggle("hide", isIfaType);
+}
+
+//
+let toggleDescription = document.querySelector(".toggle-description");
+let isDescription = true;
+
+function showHideDescription(){
+    isDescription = !isDescription;
+    toggleDescription.classList.toggle("hide", isDescription);
 }
 
 //concatenate

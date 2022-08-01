@@ -18,10 +18,9 @@
         <div class="title">Ad Request's Generator - AdTech </div>
         <br>
         <div class="title">Required: </div>
-        <br>
-          <div class="content">   
-            
 
+          <div class="" >
+            
             <!-- PARAMETER /PTV /SSPTV -->
             <div class="ptv-ssptv-details">
               <input type="radio" value="https://ib.adnxs.com/ptv?" name="ptv-ssptv" id="ptv-ssptv-0" checked="checked">
@@ -76,6 +75,10 @@
               </div>
 
             </div>
+          </div>
+          
+            
+
 
             <div class="title" >Select id or inv_code:</div>
 
@@ -457,22 +460,67 @@
       </div>
       
       <br>
+      <div class="container" style="background-color: transparent ">
 
-      <!-- GENERATED URL -->
+        <!-- Description: -->
+      <div class="" style="background-color: transparent ">
+        <div class="title" style="color: white"> Description </div>
+        <br>
+        
+
+        <!-- toggle -->
+        <label class="toggle ">
+          <input type="checkbox" onclick="showHideDescription()" />
+          <span class="slider round"></span>
+        </label>  
+
+        
+
+        <ul style="color: white" class="toggle-description hide">
+          <li>vwidth=[player width in pixel]: please use dynamic width of player; if this is not possible then leave empty, dont use value zero.</li>
+          <li>dummy description</li>
+          <li>dummy description</li>
+          <li>dummy description</li>
+          <li>dummy description</li>
+          <li>dummy description</li>
+          <li>dummy description</li>
+          <li>dummy description</li>
+          <li>dummy description</li>
+          <li>dummy description</li>
+          
+        </ul>  
+
+
+        
+
+      </div>
+      <br>
+
+
+
+      
+         
+
+              <!-- GENERATED URL -->
       <div class=" urlcontainer">
+
         <div class="title"> URL </div>
 
-          <!-- SUBMIT BUTTON -->
-      <div class="button">
-        <p id="ad-details" class="ad-details" > 
-          <!-- ...append insertAdjacentHTML function here... -->
-        </p>
+        <!-- SUBMIT BUTTON -->
+        <div class="button">
+          <p id="ad-details" class="ad-details" > 
+            <!-- ...append insertAdjacentHTML function here... -->
+          </p>
 
-        <br>
-     
-        <input type="button" value="Generate Link:)" onclick="getData()">
-        
+          <br>
+      
+          <input type="button" value="Generate Link:)" onclick="getData()">
+          
+        </div>
+
       </div>
+      
+      
 
       </div>
 
