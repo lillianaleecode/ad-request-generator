@@ -28,12 +28,27 @@ function showHideId(){
     invcode = document.getElementById("invcode");
     idparam = document.getElementById("idparam");
 
+ //if toggle is in show:
     if (! document.querySelector(".toggle-Id").classList.contains("hide")){
         invCodetoggle.setAttribute('disabled', '')
+        
     }
+   //if toggle is clicked again to hide:
     if ( document.querySelector(".toggle-Id").classList.contains("hide")){
         invCodetoggle.removeAttribute('disabled')
+        idparam.value = ''
     }
+    ;
+    //si tiene texto, el otro se disable.
+    if (document.getElementById("idparam") && document.getElementById("idparam").value) {
+        invCodetoggle.setAttribute('disabled', '')
+    }
+    //si no tiene texto, quitar el disabled del otro.
+    if (! document.getElementById("idparam") && ! document.getElementById("idparam").value) {
+        invCodetoggle.removeAttribute('disabled')
+    }
+  
+   
     // if (idOnOff.textContent = "ON"){
     //     invCodetoggle.setAttribute('disabled', '');
     // }
@@ -67,10 +82,22 @@ function showHideInvCode(){
     invcode = document.getElementById("invcode");
     idparam = document.getElementById("idparam");
 
+     //if toggle is in show:
     if (! document.querySelector(".toggle-InvCode").classList.contains("hide")){
         idtoggle.setAttribute('disabled', '')
     }
+    //if toggle is clicked again to hide:
     if ( document.querySelector(".toggle-InvCode").classList.contains("hide")){
+        idtoggle.removeAttribute('disabled')
+        invcode.value = ''
+    }
+
+    //si tiene texto, el otro se disable.
+    if (document.getElementById("invcode") && document.getElementById("invcode").value) {
+        idtoggle.setAttribute('disabled', '')
+    }
+    //si no tiene texto, quitar el disabled del otro.
+    if (! document.getElementById("invcode") && ! document.getElementById("invcode").value) {
         idtoggle.removeAttribute('disabled')
     }
 
