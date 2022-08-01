@@ -257,6 +257,32 @@ function getData(){
     
 }
 
+function getDataDebug(){
+
+    
+    ptvOrSsptv = document.querySelector('input[name="ptv-ssptv"]:checked');
+    member = document.querySelector('input[name="member"]:checked');
+    idparam = document.getElementById("idparam");
+    invcode = document.getElementById("invcode");
+    vplaybackmethod = document.querySelector('input[name="vplaybackmethod"]:checked');
+    vwidth = document.getElementById("vwidth");
+    vheight = document.getElementById("vheight");
+    gdpr = document.querySelector('input[name="gdpr"]:checked');
+    gconsent = document.getElementById("gconsent");
+    referrerparam = document.getElementById("referrerparam");
+    appid = document.getElementById("appid");
+    ifa = document.getElementById("ifa");
+    ifa_type = document.querySelector('input[name="ifa_type"]:checked');
+    ipparam = document.getElementById("ipparam");
+    ua = document.getElementById("ua");
+
+    //insert concatenated parameters to the page
+    document.getElementById("ad-details-debug").insertAdjacentHTML('afterend', (ptvOrSsptv ? ptvOrSsptv.value : "" ) + (member ? member.value : "") + (idparam ? idparam.value :"") + (invcode ? invcode.value :"") + (vplaybackmethod ? vplaybackmethod.value : "") + (vwidth ? vwidth.value :"") + (vheight ? vheight.value :"")+ (gdpr ? gdpr.value :"")+ (vheight ? vheight.value :"")+ (gconsent ? gconsent.value :"") + (referrerparam ? referrerparam.value :"") + (appid ? appid.value :"")  + (ifa? ifa.value :"")  + (ifa_type? ifa_type.value :"") + (ipparam? ipparam.value :"") + (ua ? ua.value :"") + "&debug_member=7823&dongle=b3rl1n");
+
+
+    
+}
+
 function concatIdparam(){
     const x = document.getElementById("idparam");
     x.value = "id=" + x.value + "&"

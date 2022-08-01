@@ -450,7 +450,7 @@
 
           <!-- parameter options -->
           <div class="category toggle-ua hide ">      
-            <input id="ua" onchange="concatua()"type="text" placeholder="insert string" value="ua=[user agent string associated with the device making the request]&"> 
+            <input id="ua" onchange="concatua()"type="text" placeholder="insert string" value="ua=[user agent string associated with the device making the request]"> 
           </div>
       
         </div>
@@ -460,7 +460,7 @@
       </div>
       
       <br>
-      <div class="container" style="background-color: transparent ">
+      <div class="container" style="background-color: transparent; box-shadow: none ">
 
         <!-- Description: -->
       <div class="" style="background-color: transparent ">
@@ -502,9 +502,9 @@
          
 
               <!-- GENERATED URL -->
-      <div class=" urlcontainer">
-
-        <div class="title"> URL </div>
+      <div class=" urlcontainer" style="display:flex; height: 800px" >
+<div></div>
+        <div class="title">URL </div>
 
         <!-- SUBMIT BUTTON -->
         <div class="button">
@@ -517,6 +517,21 @@
           <input type="button" value="Generate Link:)" onclick="getData()">
           
         </div>
+
+        <div class="title"> DEBUG_URL </div>
+
+        <!-- SUBMIT BUTTON -->
+        <div class="button">
+          <p id="ad-details-debug" class="ad-details" > 
+            <!-- ...append insertAdjacentHTML function here... -->
+          </p>
+
+          <br>
+      
+          <input type="button" value="Generate Debug Link:)" onclick="getDataDebug()">
+          
+        </div>
+
 
       </div>
       
