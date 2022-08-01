@@ -127,7 +127,7 @@
             <div class="">
               <input type="radio" value="vplaybackmethod=1&" name="vplaybackmethod" id="vplaybackmethod-1">
               <input type="radio" value="vplaybackmethod=2&" name="vplaybackmethod" id="vplaybackmethod-2">
-              <input type="radio" value="vplaybackmethod=3&" name="vplaybackmethod" id="vplaybackmethod-3">
+              <input type="radio" value="vplaybackmethod=3&" name="vplaybackmethod" id="vplaybackmethod-3" checked="checked">
               <input type="radio" value="vplaybackmethod=4&" name="vplaybackmethod" id="vplaybackmethod-4">
               <input type="radio" value="vplaybackmethod=5&" name="vplaybackmethod" id="vplaybackmethod-5">
 
@@ -221,7 +221,7 @@
             <!-- PARAMETER GDPR -->
             <div class="gdpr-details">
               <input type="radio" value="gdpr=0&" name="gdpr" id="gdpr-0">
-              <input type="radio" value="gdpr=1&" name="gdpr" id="gdpr-1">
+              <input type="radio" value="gdpr=1&" name="gdpr" id="gdpr-1" checked="checked">
               
               <!-- tittle -->
               <span class="gdpr-title">GDPR</span>
@@ -346,12 +346,13 @@
 
         <!-- PARAMETER ifa_type -->
         <div class="ifa_type-details">
-          <input type="radio" value="ifa_type=aaid&" name="ifa_type" id="ifa_type-0">
+          <input type="radio" value="ifa_type=openudid&" name="ifa_type" id="ifa_type-0" checked="checked">
           <input type="radio" value="ifa_type=idfa&" name="ifa_type" id="ifa_type-1">
           <input type="radio" value="ifa_type=afai&" name="ifa_type" id="ifa_type-2">
           <input type="radio" value="ifa_type=msai&" name="ifa_type" id="ifa_type-3">
           <input type="radio" value="ifa_type=rida&" name="ifa_type" id="ifa_type-4">
           <input type="radio" value="ifa_type=ppid&" name="ifa_type" id="ifa_type-5">
+          <input type="radio" value="ifa_type=aaid&" name="ifa_type" id="ifa_type-6">
           
           <!-- tittle -->
           <span class="ifa_type-title">ifa_type</span>
@@ -367,8 +368,7 @@
 
             <label for="ifa_type-0">
               <span class="dot ifa_type-0"></span>
-              <span class="ifa_type">aaid</span>
-              <span class="description">(Android)</span>
+              <span class="ifa_type">openudid</span>
             </label>
 
             <label for="ifa_type-1">
@@ -395,10 +395,18 @@
               <span class="description">(Roku)</span>
             </label>
 
+            <label for="ifa_type-6">
+              <span class="dot ifa_type-6"></span>
+              <span class="ifa_type">aaid</span>
+              <span class="description">(Android)</span>
+            </label>
+
             <label for="ifa_type-5">
               <span class="dot ifa_type-5"></span>
               <span class="ifa_type">ppid</span>
             </label>
+
+           
           
           </div>
       
