@@ -17,7 +17,8 @@
       <div class="container">
         <div class="title">Ad Request's Generator - AdTech </div>
         <br>
-        <div class="title">General </div>
+        <div class="title">Required: </div>
+        <br>
           <div class="content">   
             
 
@@ -76,6 +77,8 @@
 
             </div>
 
+            <div class="title" >Select id or inv_code:</div>
+
             <!-- PARAMETER id Or inv_code -->
             <div class="id-details">
                   
@@ -91,7 +94,7 @@
 
               <!-- parameter options -->
               <div class="category toggle-Id hide ">      
-                <input id="idparam" type="text" placeholder="insert ID number" onchange="concatIdparam()"> 
+                <input id="idparam" type="text" placeholder="insert ID number" onchange="concatIdparam()" > 
                 <p id="outputid"></p>
               </div>
           
@@ -112,10 +115,13 @@
 
               <!-- parameter options -->
               <div class="category toggle-InvCode hide ">      
-                <input id="invcode" onchange="concatInvcode()" type="text" placeholder="insert name"> 
+                <input id="invcode" onchange="concatInvcode()" type="text" placeholder="insert name" > 
               </div>
           
             </div>
+            <br>
+
+            <div class="title" >General Parameters:</div>
 
             <!-- PARAMETER vplaybackmethod -->
             <div class="">
@@ -186,7 +192,7 @@
 
               <!-- parameter options -->
               <div class="category toggle-vwidth hide ">      
-                <input id="vwidth" type="text" placeholder="insert value in pixels" onchange="concatvwidth()"> 
+                <input id="vwidth" type="text" placeholder="insert value in pixels" value="vwidth=[player width in pixel]" onchange="concatvwidth()"> 
               </div>
           
             </div>
@@ -206,7 +212,7 @@
 
               <!-- parameter options -->
               <div class="category toggle-vheight hide ">      
-                <input id="vheight" type="text" placeholder="insert value in pixels" onchange="concatvheight()"> 
+                <input id="vheight" type="text" placeholder="insert value in pixels" value="vheight=[player vheight in pixel]" onchange="concatvheight()"> 
               </div>
 
             </div>
@@ -260,7 +266,7 @@
 
               <!-- parameter options -->
               <div class="category toggle-gdpr_consent hide ">      
-                <input id="gconsent" type="text" placeholder="insert string" onchange="concatGdprconsent()"> 
+                <input id="gconsent" type="text" placeholder="insert string" value="gdpr_consent=[GDPR consent string]" onchange="concatGdprconsent()"> 
               </div>
           
             </div>
@@ -286,7 +292,7 @@
 
           <!-- parameter options -->
           <div class="category toggle-referrer hide ">      
-            <input id="referrerparam" type="text" placeholder="insert URL" onchange="concatreferrer()"> 
+            <input id="referrerparam" type="text" value="referrer=[URL, value encoded]" placeholder="insert URL" onchange="concatreferrer()"> 
           </div>
       
         </div>
@@ -313,7 +319,7 @@
 
           <!-- parameter options -->
           <div class="category toggle-appid hide ">      
-            <input id="appid"  onchange="concatappid()" type="text" placeholder="insert ID"> 
+            <input id="appid"  onchange="concatappid()" type="text" placeholder="insert ID" value="appid=[bundle ID of the mobile application]"> 
           </div>
       
         </div>
@@ -333,7 +339,7 @@
 
           <!-- parameter options -->
           <div class="category toggle-ifa hide ">      
-            <input id="ifa"  onchange="concatifa()" type="text" placeholder="insert identifier"> 
+            <input id="ifa"  onchange="concatifa()" type="text" placeholder="insert identifier" value="ifa=[unique device identifier using UUID standard (8-4-4-4-12)]"> 
           </div>
       
         </div>
@@ -413,7 +419,7 @@
 
           <!-- parameter options -->
           <div class="category toggle-ip hide ">      
-            <input id="ipparam" onchange="concatipparam()" type="text" placeholder="insert api adress"> 
+            <input id="ipparam" onchange="concatipparam()" type="text" value="ip=[IP address of the device making the ad request]" placeholder="insert api adress"> 
           </div>
       
         </div>
@@ -433,7 +439,7 @@
 
           <!-- parameter options -->
           <div class="category toggle-ua hide ">      
-            <input id="ua" onchange="concatua()"type="text" placeholder="insert string"> 
+            <input id="ua" onchange="concatua()"type="text" placeholder="insert string" value="ua=[user agent string associated with the device making the request]"> 
           </div>
       
         </div>
