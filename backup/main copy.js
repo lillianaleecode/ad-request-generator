@@ -283,20 +283,6 @@ function getDataDebug(){
     
 }
 
-function DisplayFormValues()
-    {
-        var str = '';
-        var elem = document.getElementById('frmMain').elements;
-        for(var i = 0; i < elem.length; i++)
-        {
-            str += "<b>Type:</b>" + elem[i].type + " ";
-            str += "<b>Name:</b>" + elem[i].name + " ";
-            str += "<b>Value:</b><i>" + elem[i].value + " ";
-            str += "<BR>";
-        } 
-        document.getElementById('lblValues').innerHTML = str;
-    }
-
 function concatIdparam(){
     const x = document.getElementById("idparam");
     x.value = "id=" + x.value + "&"
