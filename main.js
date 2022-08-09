@@ -289,10 +289,35 @@ function DisplayFormValues()
         var elem = document.getElementById('frmMain').elements;
         for(var i = 0; i < elem.length; i++)
         {
+             //what i want to ignore
+             if (elem[i].type == "checkbox" || elem[i].type == "button"  ){
+                continue;
+            };
+
+            if (elem[i].type == "radio" && elem[i].checked == false ){
+                continue;
+            }
+
+            //what I want to do:
             str += "<b>Type:</b>" + elem[i].type + " ";
-            str += "<b>Name:</b>" + elem[i].name + " ";
-            str += "<b>Value:</b><i>" + elem[i].value + " ";
-            str += "<BR>";
+                str += "<b>Name:</b>" + elem[i].name + " ";
+                str += "<b>Value:</b><i>" + elem[i].value + " ";
+                str += "<BR>"
+
+           
+           
+
+            // //what i dont want to ignore and do something
+            // if (elem[i].checked){
+            //     str += "<b>Type:</b>" + elem[i].type + " ";
+            //     str += "<b>Name:</b>" + elem[i].name + " ";
+            //     str += "<b>Value:</b><i>" + elem[i].value + " ";
+            //     str += "<BR>";
+
+            // }
+            
+
+            
         } 
         document.getElementById('lblValues').innerHTML = str;
     }
