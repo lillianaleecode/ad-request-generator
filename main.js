@@ -59,7 +59,7 @@ function showHideInvCode(){
 
 //
 let toggleShow = document.querySelector(".toggle-gdpr");
-function showHide1(){
+function showHideGdpr(){
     toggleShow.classList.toggle("hide");
 }
 
