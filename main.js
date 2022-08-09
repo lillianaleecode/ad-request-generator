@@ -231,57 +231,6 @@ function showHideDescription(){
 }
 
 //concatenate
-function getData(){
-
-    
-    ptvOrSsptv = document.querySelector('input[name="ptv-ssptv"]:checked');
-    member = document.querySelector('input[name="member"]:checked');
-    idparam = document.getElementById("idparam");
-    invcode = document.getElementById("invcode");
-    vplaybackmethod = document.querySelector('input[name="vplaybackmethod"]:checked');
-    vwidth = document.getElementById("vwidth");
-    vheight = document.getElementById("vheight");
-    gdpr = document.querySelector('input[name="gdpr"]:checked');
-    gconsent = document.getElementById("gconsent");
-    referrerparam = document.getElementById("referrerparam");
-    appid = document.getElementById("appid");
-    ifa = document.getElementById("ifa");
-    ifa_type = document.querySelector('input[name="ifa_type"]:checked');
-    ipparam = document.getElementById("ipparam");
-    ua = document.getElementById("ua");
-
-    //insert concatenated parameters to the page
-    document.getElementById("ad-details").insertAdjacentHTML('afterend', (ptvOrSsptv ? ptvOrSsptv.value : "" ) + (member ? member.value : "") + (idparam ? idparam.value :"") + (invcode ? invcode.value :"") + (vplaybackmethod ? vplaybackmethod.value : "") + (vwidth ? vwidth.value :"") + (vheight ? vheight.value :"")+ (gdpr ? gdpr.value :"")+ (vheight ? vheight.value :"")+ (gconsent ? gconsent.value :"") + (referrerparam ? referrerparam.value :"") + (appid ? appid.value :"")  + (ifa? ifa.value :"")  + (ifa_type? ifa_type.value :"") + (ipparam? ipparam.value :"") + (ua ? ua.value :""));
-
-
-    
-}
-
-function getDataDebug(){
-
-    
-    ptvOrSsptv = document.querySelector('input[name="ptv-ssptv"]:checked');
-    member = document.querySelector('input[name="member"]:checked');
-    idparam = document.getElementById("idparam");
-    invcode = document.getElementById("invcode");
-    vplaybackmethod = document.querySelector('input[name="vplaybackmethod"]:checked');
-    vwidth = document.getElementById("vwidth");
-    vheight = document.getElementById("vheight");
-    gdpr = document.querySelector('input[name="gdpr"]:checked');
-    gconsent = document.getElementById("gconsent");
-    referrerparam = document.getElementById("referrerparam");
-    appid = document.getElementById("appid");
-    ifa = document.getElementById("ifa");
-    ifa_type = document.querySelector('input[name="ifa_type"]:checked');
-    ipparam = document.getElementById("ipparam");
-    ua = document.getElementById("ua");
-
-    //insert concatenated parameters to the page
-    document.getElementById("ad-details-debug").insertAdjacentHTML('afterend', (ptvOrSsptv ? ptvOrSsptv.value : "" ) + (member ? member.value : "") + (idparam ? idparam.value :"") + (invcode ? invcode.value :"") + (vplaybackmethod ? vplaybackmethod.value : "") + (vwidth ? vwidth.value :"") + (vheight ? vheight.value :"")+ (gdpr ? gdpr.value :"")+ (vheight ? vheight.value :"")+ (gconsent ? gconsent.value :"") + (referrerparam ? referrerparam.value :"") + (appid ? appid.value :"")  + (ifa? ifa.value :"")  + (ifa_type? ifa_type.value :"") + (ipparam? ipparam.value :"") + (ua ? ua.value :"") + "&debug_member=7823&dongle=b3rl1n");
-
-
-    
-}
 
 function DisplayFormValues()
     {
@@ -298,76 +247,13 @@ function DisplayFormValues()
                 continue;
             }
 
-            //what I want to do:
-            str += "<b>Type:</b>" + elem[i].type + " ";
-                str += "<b>Name:</b>" + elem[i].name + " ";
-                str += "<b>Value:</b><i>" + elem[i].value + " ";
-                str += "<BR>"
-
-           
-           
-
-            // //what i dont want to ignore and do something
-            // if (elem[i].checked){
-            //     str += "<b>Type:</b>" + elem[i].type + " ";
-            //     str += "<b>Name:</b>" + elem[i].name + " ";
-            //     str += "<b>Value:</b><i>" + elem[i].value + " ";
-            //     str += "<BR>";
-
-            // }
-            
-
+            //concatenate
+            str +=  elem[i].value;
             
         } 
         document.getElementById('lblValues').innerHTML = str;
+        document.getElementById('lblValuesDebug').innerHTML = str + "&debug_member=7823&dongle=b3rl1n" ;
     }
 
-function concatIdparam(){
-    const x = document.getElementById("idparam");
-    x.value = "id=" + x.value + "&"
-}
-
-function concatInvcode(){
-    const x = document.getElementById("invcode");
-    x.value = "inv_code=" + x.value + "&"
-}
-
-function concatvwidth(){
-    const x = document.getElementById("vwidth");
-    x.value = "vwidth=" + x.value + "&"
-}
-
-function concatvheight(){
-    const x = document.getElementById("vheight");
-    x.value = "vheight=" + x.value + "&"
-}
-
-function concatGdprconsent(){
-    const x = document.getElementById("gconsent");
-    x.value = "gdpr_consent=" + x.value + "&"
-}
-
-function concatreferrer(){
-    const x = document.getElementById("referrerparam");
-    x.value = "referrer=" + x.value + "&"
-}
-
-function concatappid(){
-    const x = document.getElementById("appid");
-    x.value = "appid=" + x.value + "&"
-}
-function concatifa(){
-    const x = document.getElementById("ifa");
-    x.value = "ifa=" + x.value + "&"
-}
-function concatipparam(){
-    const x = document.getElementById("ipparam");
-    x.value = "ip=" + x.value + "&"
-}
-function concatua(){
-    const x = document.getElementById("ua");
-    x.value = "ua=" + x.value 
-    //as this is the last parameter, it doesnt end with the &
-}
 
     
