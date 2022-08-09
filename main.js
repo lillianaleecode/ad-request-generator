@@ -1,14 +1,5 @@
-//TOGGLES and RADIO BUTTONS
+//****************** TOGGLES and RADIO BUTTONS ******************
 
-const toggle = document.querySelector('.toggle input')
-
-toggle.addEventListener('click', () => {
-    const onOff = toggle.parentNode.querySelector('.onoff')
-    onOff.textContent = toggle.checked ? 'ON' : 'OFF'
-    
-})
-
-//
 idtoggle = document.getElementById("idtoggle");
 idOnOff = document.getElementById("idOnOff");
 invCodetoggle = document.getElementById("invCodetoggle");
@@ -16,11 +7,10 @@ invCodeOnOff = document.getElementById("invCodeOnOff");
 invcode = document.getElementById("invcode");
 idparam = document.getElementById("idparam");
 
+// ****************** function showHideId() ******************
 let toggleShowId = document.querySelector(".toggle-Id");
 function showHideId(){
     toggleShowId.classList.toggle("hide");
-
-    
 
  //if toggle is in show:
     if (! document.querySelector(".toggle-Id").classList.contains("hide")){
@@ -40,20 +30,13 @@ function showHideId(){
     //si no tiene texto, quitar el disabled del otro.
     if (! document.getElementById("idparam") && ! document.getElementById("idparam").value) {
         invCodetoggle.removeAttribute('disabled')
-    }
-    
+    }  
 }
 
-
-//
+// ****************** function showHideId() ******************
 let toggleShowInvCode = document.querySelector(".toggle-InvCode");
-
 function showHideInvCode(){
-
     toggleShowInvCode.classList.toggle("hide");
-
-    
-
      //if toggle is in show:
     if (! document.querySelector(".toggle-InvCode").classList.contains("hide")){
         idtoggle.setAttribute('disabled', '')
@@ -63,7 +46,6 @@ function showHideInvCode(){
         idtoggle.removeAttribute('disabled')
         invcode.value = ''
     }
-
     //si tiene texto, el otro se disable.
     if (document.getElementById("invcode") && document.getElementById("invcode").value) {
         idtoggle.setAttribute('disabled', '')
@@ -72,20 +54,6 @@ function showHideInvCode(){
     if (! document.getElementById("invcode") && ! document.getElementById("invcode").value) {
         idtoggle.removeAttribute('disabled')
     }
-
-    // if (invCodeOnOff.textContent = "ON"){
-    //     idtoggle.setAttribute('disabled', '');
-    // }
-    // if(invCodeOnOff.textContent = "OFF"){
-    //     invcode.value = "";
-    //      idtoggle.setAttribute('disabled', '');
-    // }
-    // if (invCodeOnOff.textContent = "OFF" && idparam.textContent != ""){
-    //     invCodetoggle.removeAttribute('disabled');
-    // }
-
-
-
 }
 
 
@@ -163,7 +131,7 @@ function showHideDescription(){
     toggleDescription.classList.toggle("hide");
 }
 
-//concatenate
+// ****************** CONCATENATE generate URL ******************
 
 function DisplayFormValues()
     {
