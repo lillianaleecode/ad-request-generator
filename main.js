@@ -56,80 +56,14 @@ function showHideInvCode(){
     }
 }
 
-
 //
-let toggleShow = document.querySelector(".toggle-gdpr");
-function showHideGdpr(){
+
+function showHide(e){
+    let toggleShow = document.querySelector(e)
     toggleShow.classList.toggle("hide");
 }
 
 
-//
-let toggleShowvplaybackmethod = document.querySelector(".toggle-vplaybackmethod");
-function showHidevplaybackmethod(){
-    toggleShowvplaybackmethod.classList.toggle("hide");
-
-}
-
-//
-let toggleShowvwidth = document.querySelector(".toggle-vwidth");
-function showHideVwidth(){
-    toggleShowvwidth.classList.toggle("hide");
-}
-
-//
-let toggleShowvheight = document.querySelector(".toggle-vheight");
-function showHideVheight(){
-    toggleShowvheight.classList.toggle("hide");
-}
-
-//
-let toggleGdprConsent = document.querySelector(".toggle-gdpr_consent");
-function showHideGdprConsent(){
-    toggleGdprConsent.classList.toggle("hide");
-}
-
-//
-let toggleReferrer = document.querySelector(".toggle-referrer");
-function showHideReferrer(){
-    toggleReferrer.classList.toggle("hide");
-}
-
-//
-let toggleAppid = document.querySelector(".toggle-appid");
-function showHideAppid(){
-    toggleAppid.classList.toggle("hide");
-}
-
-//
-let toggleIfa = document.querySelector(".toggle-ifa");
-function showHideIfa(){
-    toggleIfa.classList.toggle("hide");
-}
-
-//
-let toggleIp = document.querySelector(".toggle-ip");
-function showHideIp(){
-    toggleIp.classList.toggle("hide");
-}
-
-//
-let toggleUa = document.querySelector(".toggle-ua");
-function showHideUa(){
-    toggleUa.classList.toggle("hide");
-}
-
-//
-let toggleIfaType = document.querySelector(".toggle-ifa_type");
-function showHideIfaType(){ 
-    toggleIfaType.classList.toggle("hide");
-}
-
-//
-let toggleDescription = document.querySelector(".toggle-description");
-function showHideDescription(){
-    toggleDescription.classList.toggle("hide");
-}
 
 // ****************** CONCATENATE generate URL ******************
 

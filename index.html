@@ -97,7 +97,7 @@
 
               <!-- parameter options -->
               <div class="category toggle-Id hide ">      
-                <input id="idparam" type="text" placeholder="insert ID number" onchange="concatIdparam()" > 
+                <input id="idparam" type="text" placeholder="insert ID number" onchange="" > 
                 <p id="outputid"></p>
               </div>
           
@@ -117,7 +117,7 @@
 
               <!-- parameter options -->
               <div class="category toggle-InvCode hide ">      
-                <input id="invcode" onchange="concatInvcode()" type="text" placeholder="insert name" > 
+                <input id="invcode" onchange="" type="text" placeholder="insert name" > 
               </div>
           
             </div>
@@ -138,7 +138,7 @@
 
               <!-- toggle-->
               <label class="toggle">
-                <input type="checkbox" onclick="showHidevplaybackmethod()" />
+                <input type="checkbox" onclick="showHide('.toggle-vplaybackmethod')" />
                 <span class="slider round"></span>
               </label>   
 
@@ -187,14 +187,13 @@
           
               <!-- toggle -->
               <label class="toggle">
-                <!-- <span class="onoff">OFF</span> -->
-                <input type="checkbox" onclick="showHideVwidth()" />
+                <input type="checkbox" onclick="showHide('.toggle-vwidth')" />
                 <span class="slider round"></span>
               </label>   
 
               <!-- parameter options -->
               <div class="category toggle-vwidth hide ">      
-                <input id="vwidth" type="text" placeholder="insert value in pixels" value="vwidth=[player width in pixel]&" onchange="concatvwidth()"> 
+                <input id="vwidth" type="text" placeholder="insert value in pixels" value="vwidth=[player width in pixel]&" onchange=""> 
               </div>
           
             </div>
@@ -207,14 +206,13 @@
 
               <!-- toggle -->
               <label class="toggle">
-                <!-- <span class="onoff">OFF</span> -->
-                <input type="checkbox" onclick="showHideVheight()" />
+                <input type="checkbox" onclick="showHide('.toggle-vheight')" />
                 <span class="slider round"></span>
               </label>   
 
               <!-- parameter options -->
               <div class="category toggle-vheight hide ">      
-                <input id="vheight" type="text" placeholder="insert value in pixels" value="vheight=[player vheight in pixel]&" onchange="concatvheight()"> 
+                <input id="vheight" type="text" placeholder="insert value in pixels" value="vheight=[player vheight in pixel]&" onchange=""> 
               </div>
 
             </div>
@@ -230,7 +228,7 @@
           
               <!-- toggle -->
               <label class="toggle">
-                <input type="checkbox" onclick="showHideGdpr()" />
+                <input type="checkbox" onclick="showHide('.toggle-gdpr')"/>
                 <span class="slider round"></span>
               </label>   
 
@@ -260,14 +258,13 @@
 
               <!-- toggle -->
               <label class="toggle">
-                <!-- <span class="onoff">OFF</span> -->
-                <input type="checkbox" onclick="showHideGdprConsent()" />
+                <input type="checkbox" onclick="showHide('.toggle-gdpr_consent')" />
                 <span class="slider round"></span>
               </label>   
 
               <!-- parameter options -->
-              <div class="category toggle-gdpr_consent toggle-gdpr hide ">      
-                <input id="gconsent" type="text" placeholder="insert string" value="gdpr_consent=[GDPR consent string]&" onchange="concatGdprconsent()"> 
+              <div class="category toggle-gdpr_consent hide ">      
+                <input id="gconsent" type="text" placeholder="insert string" value="gdpr_consent=[GDPR consent string]&" onchange=""> 
               </div>
           
             </div>
@@ -286,14 +283,13 @@
 
           <!-- toggle -->
           <label class="toggle">
-            <!-- <span class="onoff">OFF</span> -->
-            <input type="checkbox" onclick="showHideReferrer()" />
+            <input type="checkbox" onclick="showHide('.toggle-referrer')" />
             <span class="slider round"></span>
           </label>   
 
           <!-- parameter options -->
           <div class="category toggle-referrer hide ">      
-            <input id="referrerparam" type="text" value="referrer=[URL, value encoded]&" placeholder="insert URL" onchange="concatreferrer()"> 
+            <input id="referrerparam" type="text" value="referrer=[URL, value encoded]&" placeholder="insert URL" onchange=""> 
           </div>
       
         </div>
@@ -313,14 +309,13 @@
 
           <!-- toggle -->
           <label class="toggle">
-            <!-- <span class="onoff">OFF</span> -->
-            <input type="checkbox" onclick="showHideAppid()" />
+            <input type="checkbox" onclick="showHide('.toggle-appid')" />
             <span class="slider round"></span>
           </label>   
 
           <!-- parameter options -->
           <div class="category toggle-appid hide ">      
-            <input id="appid"  onchange="concatappid()" type="text" placeholder="insert ID" value="appid=[bundle ID of the mobile application]&"> 
+            <input id="appid"  onchange="" type="text" placeholder="insert ID" value="appid=[bundle ID of the mobile application]&"> 
           </div>
       
         </div>
@@ -333,14 +328,13 @@
 
           <!-- toggle -->
           <label class="toggle">
-            <!-- <span class="onoff">OFF</span> -->
-            <input type="checkbox" onclick="showHideIfa()" />
+            <input type="checkbox" onclick="showHide('.toggle-ifa')" />
             <span class="slider round"></span>
           </label>   
 
           <!-- parameter options -->
           <div class="category toggle-ifa hide ">      
-            <input id="ifa"  onchange="concatifa()" type="text" placeholder="insert identifier" value="ifa=[unique device identifier using UUID standard (8-4-4-4-12)]&"> 
+            <input id="ifa"  onchange="" type="text" placeholder="insert identifier" value="ifa=[unique device identifier using UUID standard (8-4-4-4-12)]&"> 
           </div>
       
         </div>
@@ -360,7 +354,7 @@
       
           <!-- toggle -->
           <label class="toggle">
-            <input type="checkbox" onclick="showHideIfaType()" />
+            <input type="checkbox" onclick="showHide('.toggle-ifa_type')" />
             <span class="slider round"></span>
           </label>   
 
@@ -421,14 +415,13 @@
 
           <!-- toggle -->
           <label class="toggle">
-            <!-- <span class="onoff">OFF</span> -->
-            <input type="checkbox" onclick="showHideIp()" />
+            <input type="checkbox" onclick="showHide('.toggle-ip')" />
             <span class="slider round"></span>
           </label>   
 
           <!-- parameter options -->
           <div class="category toggle-ip hide ">      
-            <input id="ipparam" onchange="concatipparam()" type="text" value="ip=[IP address of the device making the ad request]&" placeholder="insert api adress"> 
+            <input id="ipparam" onchange="" type="text" value="ip=[IP address of the device making the ad request]&" placeholder="insert api adress"> 
           </div>
       
         </div>
@@ -441,14 +434,13 @@
 
           <!-- toggle -->
           <label class="toggle">
-            <!-- <span class="onoff">OFF</span> -->
-            <input type="checkbox" onclick="showHideUa()" />
+            <input type="checkbox" onclick="showHide('.toggle-ua')" />
             <span class="slider round"></span>
           </label>   
 
           <!-- parameter options -->
           <div class="category toggle-ua hide ">      
-            <input id="ua" onchange="concatua()"type="text" placeholder="insert string" value="ua=[user agent string associated with the device making the request]"> 
+            <input id="ua" onchange=""type="text" placeholder="insert string" value="ua=[user agent string associated with the device making the request]"> 
           </div>
       
         </div>
@@ -461,32 +453,33 @@
       <div class="container" style="background-color: transparent; box-shadow: none ">
 
         <!-- Description: -->
-      <div class="" style="background-color: transparent ">
-        <div class="title" style="color: white"> Description </div>
-        <br>
+        <div class="" style="background-color: transparent ">
+          <div class="title" style="color: white"> Description </div>
+          <br>
         
 
         <!-- toggle -->
         <label class="toggle ">
-          <input type="checkbox" onclick="showHideDescription()" />
+          <input type="checkbox" onclick="showHide('.toggle-description')" />
           <span class="slider round"></span>
         </label>  
 
-        
+        <div class="category toggle-description hide ">      
 
-        <ul style="color: white" class="toggle-description hide">
-          <li>vwidth=[player width in pixel]: please use dynamic width of player; if this is not possible then leave empty, dont use value zero.</li>
-          <li>dummy description</li>
-          <li>dummy description</li>
-          <li>dummy description</li>
-          <li>dummy description</li>
-          <li>dummy description</li>
-          <li>dummy description</li>
-          <li>dummy description</li>
-          <li>dummy description</li>
-          <li>dummy description</li>
-          
-        </ul>  
+          <ul style="color: white" class="toggle-description">
+            <li>vwidth=[player width in pixel]: please use dynamic width of player; if this is not possible then leave empty, dont use value zero.</li>
+            <li>dummy description</li>
+            <li>dummy description</li>
+            <li>dummy description</li>
+            <li>dummy description</li>
+            <li>dummy description</li>
+            <li>dummy description</li>
+            <li>dummy description</li>
+            <li>dummy description</li>
+            <li>dummy description</li>
+            
+          </ul>  
+        </div>
 
 
         
