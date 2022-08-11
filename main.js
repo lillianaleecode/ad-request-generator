@@ -1,66 +1,26 @@
-//****************** TOGGLES and RADIO BUTTONS ******************
-
-idtoggle = document.getElementById("idtoggle");
-idOnOff = document.getElementById("idOnOff");
-invCodetoggle = document.getElementById("invCodetoggle");
-invCodeOnOff = document.getElementById("invCodeOnOff");
-invcode = document.getElementById("invcode");
-idparam = document.getElementById("idparam");
-
-// ****************** function showHideId() ******************
-let toggleShowId = document.querySelector(".toggle-Id");
-function showHideId(){
-    toggleShowId.classList.toggle("hide");
-
- //if toggle is in show:
-    if (! document.querySelector(".toggle-Id").classList.contains("hide")){
-        invCodetoggle.setAttribute('disabled', '')
-        
-    }
-   //if toggle is clicked again to hide:
-    if ( document.querySelector(".toggle-Id").classList.contains("hide")){
-        invCodetoggle.removeAttribute('disabled')
-        idparam.value = ''
-    }
-    ;
-    //si tiene texto, el otro se disable.
-    if (document.getElementById("idparam") && document.getElementById("idparam").value) {
-        invCodetoggle.setAttribute('disabled', '')
-    }
-    //si no tiene texto, quitar el disabled del otro.
-    if (! document.getElementById("idparam") && ! document.getElementById("idparam").value) {
-        invCodetoggle.removeAttribute('disabled')
-    }  
-}
-
-// ****************** function showHideId() ******************
-let toggleShowInvCode = document.querySelector(".toggle-InvCode");
-function showHideInvCode(){
-    toggleShowInvCode.classList.toggle("hide");
-     //if toggle is in show:
-    if (! document.querySelector(".toggle-InvCode").classList.contains("hide")){
-        idtoggle.setAttribute('disabled', '')
-    }
-    //if toggle is clicked again to hide:
-    if ( document.querySelector(".toggle-InvCode").classList.contains("hide")){
-        idtoggle.removeAttribute('disabled')
-        invcode.value = ''
-    }
-    //si tiene texto, el otro se disable.
-    if (document.getElementById("invcode") && document.getElementById("invcode").value) {
-        idtoggle.setAttribute('disabled', '')
-    }
-    //si no tiene texto, quitar el disabled del otro.
-    if (! document.getElementById("invcode") && ! document.getElementById("invcode").value) {
-        idtoggle.removeAttribute('disabled')
-    }
-}
 
 // ****************** ACTIVATE OR DEACTIVATE TOGGLE ******************
 
-function showHide(e){
-    let toggleShow = document.querySelector(e)
+function showHide(a,b,c){
+    let toggleShow = document.querySelector(a);
+    let inputAffected = document.getElementById(c);
+    let oppositeToggle = document.getElementById(b);
+
     toggleShow.classList.toggle("hide");
+
+    //if statements for Id and Inv_code Parameters:
+    if (! toggleShow.classList.contains("hide")){
+        oppositeToggle.setAttribute('disabled', '')}
+
+    if ( toggleShow.classList.contains("hide")){
+        oppositeToggle.removeAttribute('disabled')
+        inputAffected.value = ''}
+
+    if (inputAffected && inputAffected.value) {
+        oppositeToggle.setAttribute('disabled', '')}
+
+    if (! inputAffected && ! inputAffected.value) {
+        oppositeToggle.removeAttribute('disabled') }  
 }
 
 // ****************** CONCATENATE generate URL ******************
