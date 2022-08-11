@@ -56,14 +56,12 @@ function showHideInvCode(){
     }
 }
 
-//
+// ****************** ACTIVATE OR DEACTIVATE TOGGLE ******************
 
 function showHide(e){
     let toggleShow = document.querySelector(e)
     toggleShow.classList.toggle("hide");
 }
-
-
 
 // ****************** CONCATENATE generate URL ******************
 

@@ -66,12 +66,6 @@ form .input-box span.details{
 .ad-details .input-box input:valid{
   border-color: magenta;
 }
- /* form .gdpr-details .gdpr-title{
-  font-size: 20px;
-  font-weight: 500;
- } */
-
-
 
  form .description{
     font-size: 15px;
